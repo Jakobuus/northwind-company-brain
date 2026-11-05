@@ -1,0 +1,56 @@
+.hf-root{position:absolute;inset:0;background:#1e1e1e;overflow:hidden}
+.hf-root .hf-svg{display:block;width:100%;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hf-root .hf-mono{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.hf-root .hf-gridline{fill:none;stroke:#ffffff07;stroke-width:1}
+.hf-root .hf-h1{fill:#fff;font-size:34px;font-weight:650}
+.hf-root .hf-h2{fill:#8b8d91;font-size:16px}
+.hf-root .hf-colhead{fill:#8b8d91;font-size:14px;letter-spacing:1.6px}
+.hf-root .hf-hn{fill:#a882ff}
+.hf-root .hf-rule{stroke:#333;stroke-width:1;fill:none}
+.hf-root .hf-group{fill:#6c6e73;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.hf-root .hf-tile rect{fill:#232325;stroke:#38383d;stroke-width:1}
+.hf-root .hf-doc{fill:none;stroke:#7a7c82;stroke-width:1;stroke-linejoin:round}
+.hf-root .hf-doctag{fill:#c4adff;font:700 8.5px "SF Mono",ui-monospace,Menlo,monospace}
+.hf-root .hf-tname{fill:#e6e6e8;font-size:15px;font-weight:550}
+.hf-root .hf-ext{fill:#8b8d91;font-size:12.5px}
+.hf-root .hf-other rect{fill:none;stroke-dasharray:4 4}
+.hf-root .hf-box>rect{fill:#222224;stroke:#45454b;stroke-width:1}
+.hf-root .hf-btitle{fill:#fff;font-size:20px;font-weight:620}
+.hf-root .hf-bsub{fill:#8b8d91;font-size:14px}
+.hf-root .hf-bnum{fill:#5f6166;font-size:13px;letter-spacing:1px}
+.hf-root .hf-pill rect{fill:#a882ff1f;stroke:#a882ff;stroke-width:1}
+.hf-root .hf-pill text{fill:#c4adff;font-size:12px;font-weight:700}
+.hf-root .hf-lock rect,.hf-root .hf-lock path{fill:none;stroke:#ffb547;stroke-width:1.4}
+.hf-root .hf-perm>rect{fill:#2a2416;stroke:#ffb547;stroke-width:1.5}
+.hf-root .hf-perm .hf-btitle{fill:#ffcf85}
+.hf-root .hf-perm .hf-bnum{fill:#ffb547}
+.hf-root .hf-permline{fill:#ffe2b3;font-size:17px;font-weight:550}
+.hf-root .hf-ans>rect{stroke:#4fd1a5}
+.hf-root .hf-ans .hf-btitle{fill:#8ff0cc}
+.hf-root .hf-askp>rect{stroke-dasharray:5 4;stroke:#6a6b72}
+.hf-root .hf-mba>rect{fill:#1f1f22;stroke:#45454b;stroke-dasharray:5 4}
+.hf-root .hf-edge{fill:#6c6e73;font-size:12.5px}
+.hf-root .hf-ring{fill:#a882ff0a;stroke:#5b4c80;stroke-width:1}
+.hf-root .hf-r3{fill:#a882ff26;stroke:#a882ff}
+.hf-root .hf-r0{stroke-dasharray:3 4;stroke:#6a6b72;fill:#ffffff04}
+.hf-root .hf-rname{fill:#e6e6e8;font-size:14px}
+.hf-root .hf-rsub{fill:#7c7e84;font-size:12px}
+.hf-root .hf-pipe{fill:none;stroke:#4a4a52;stroke-width:1}
+.hf-root .hf-dash{stroke-dasharray:4 4}
+.hf-root .hf-dot circle{fill:#a882ff}
+.hf-root .hf-dot .hf-halo{fill:#a882ff;opacity:.18}
+.hf-root .hf-dot.hf-dim{opacity:.55}
+.hf-root .hf-legend .hf-lg-flow{fill:#a882ff}
+.hf-root .hf-legend .hf-lg-perm{fill:#2a2416;stroke:#ffb547;stroke-width:1.5}
+.hf-root .hf-lgt{fill:#8b8d91;font-size:14px}
+.hf-root .hf-cell{fill:#222224;stroke:#38383d;stroke-width:1}
+.hf-root .hf-count{fill:#fff;font-size:40px;font-weight:600;font-variant-numeric:tabular-nums}
+.hf-root .hf-clabel{fill:#8b8d91;font-size:14px;letter-spacing:1.4px;text-transform:uppercase}
+.hf-root .hf-live{fill:#4fd1a5}
+.hf-root .hf-store>rect:first-child{fill:#1f1f22;stroke:#45454b}
+.hf-root .hf-store.hf-perm>rect:first-child{fill:#2a2416;stroke:#ffb547}
+.hf-root .hf-sg{fill:#a882ff1f;stroke:#a882ff;stroke-width:1}
+.hf-root .hf-perm .hf-sg{fill:#ffb54722;stroke:#ffb547}
+.hf-root .hf-sgt{fill:#c4adff;font-size:11px;font-weight:700}
+.hf-root .hf-sname{fill:#fff;font-size:14px;font-weight:650}
+.hf-root .hf-ssub{fill:#8b8d91;font-size:12px}

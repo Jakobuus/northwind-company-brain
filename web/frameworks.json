@@ -1,0 +1,1277 @@
+{
+ "source": "MBA Brain public framework library",
+ "disciplines": [
+  {
+   "name": "Accounting",
+   "frameworks": [
+    {
+     "title": "Accounting distress ladder"
+    },
+    {
+     "title": "Accounting invariance test"
+    },
+    {
+     "title": "Acquisitive company accounting check"
+    },
+    {
+     "title": "Action controls fit and design"
+    },
+    {
+     "title": "Activity based budgeting"
+    },
+    {
+     "title": "Activity based costing"
+    },
+    {
+     "title": "Beyond budgeting unbundling"
+    },
+    {
+     "title": "Budget target setting"
+    },
+    {
+     "title": "Consolidation equity method"
+    },
+    {
+     "title": "Contract modification test"
+    },
+    {
+     "title": "Control package contingency fit"
+    },
+    {
+     "title": "Control tightness calibration"
+    },
+    {
+     "title": "Controller independence safeguards"
+    },
+    {
+     "title": "Cost classification taxonomy"
+    },
+    {
+     "title": "Cost system sophistication rule"
+    },
+    {
+     "title": "Cost volume profit analysis"
+    },
+    {
+     "title": "Depreciation methods"
+    },
+    {
+     "title": "Earnings quality red flag screen"
+    },
+    {
+     "title": "Earnings shifting test"
+    },
+    {
+     "title": "Financial responsibility center design"
+    },
+    {
+     "title": "Five requirement accounting quality test"
+    }
+   ]
+  },
+  {
+   "name": "Analytics",
+   "frameworks": [
+    {
+     "title": "Bayesian scientific method voulgaris loop"
+    },
+    {
+     "title": "Bias persistence test"
+    },
+    {
+     "title": "Brier score"
+    },
+    {
+     "title": "Centaur hybrid intelligence"
+    },
+    {
+     "title": "Digital experimentation culture"
+    },
+    {
+     "title": "Economic forecasting diagnostic"
+    },
+    {
+     "title": "Fox vs hedgehog forecaster diagnostic"
+    },
+    {
+     "title": "Hand reading bayesian range estimation"
+    },
+    {
+     "title": "House of analytics"
+    },
+    {
+     "title": "Law of one price stub check"
+    },
+    {
+     "title": "Long tail strategy"
+    },
+    {
+     "title": "Power law forecasting"
+    },
+    {
+     "title": "Regression adjusted prediction"
+    },
+    {
+     "title": "Sir compartmental model"
+    },
+    {
+     "title": "Three form emh diagnostic"
+    },
+    {
+     "title": "Three type climate forecast uncertainty decomposition"
+    },
+    {
+     "title": "Weather forecasting iteration cycle"
+    }
+   ]
+  },
+  {
+   "name": "Competitive strategy",
+   "frameworks": [
+    {
+     "title": "Adaptability as competitive advantage"
+    },
+    {
+     "title": "Asymmetric cost imposition"
+    },
+    {
+     "title": "Bad strategy diagnostic four hallmarks"
+    },
+    {
+     "title": "Buyers lock in defence"
+    },
+    {
+     "title": "Chain link systems constraint removal"
+    },
+    {
+     "title": "Competitive paradigm disruption"
+    },
+    {
+     "title": "Core competencies"
+    },
+    {
+     "title": "Counter positioning collateral damage screen"
+    },
+    {
+     "title": "First mover advantage"
+    },
+    {
+     "title": "Five competitive variables"
+    },
+    {
+     "title": "Focus three types"
+    },
+    {
+     "title": "Independent judgment diagnostic five errors"
+    },
+    {
+     "title": "Industry life cycle"
+    },
+    {
+     "title": "Industry structure evolution"
+    },
+    {
+     "title": "Inertia and entropy diagnostic"
+    },
+    {
+     "title": "Lock in audit and cycle"
+    },
+    {
+     "title": "Market share myth price growth test"
+    },
+    {
+     "title": "Mcgahan industry change trajectories"
+    },
+    {
+     "title": "Multilayer digital platform architecture"
+    },
+    {
+     "title": "New network launch evolution or revolution"
+    },
+    {
+     "title": "Pestel framework"
+    }
+   ]
+  },
+  {
+   "name": "Corporate strategy",
+   "frameworks": [
+    {
+     "title": "Acquisition value test six archetypes"
+    },
+    {
+     "title": "Alliance management process"
+    },
+    {
+     "title": "Ally vs acquire decision framework"
+    },
+    {
+     "title": "Bcg growth share matrix"
+    },
+    {
+     "title": "Business model evolution 1 2 3"
+    },
+    {
+     "title": "Complement strategy profit pool"
+    },
+    {
+     "title": "Core interaction design"
+    },
+    {
+     "title": "Corporate scope ownership test"
+    },
+    {
+     "title": "Cynefin framework"
+    },
+    {
+     "title": "Divestiture value assessment"
+    },
+    {
+     "title": "Four network effect types"
+    },
+    {
+     "title": "Ge mckinsey portfolio matrix"
+    },
+    {
+     "title": "Growth the right way four levers"
+    },
+    {
+     "title": "Ma acquisition purpose framework"
+    },
+    {
+     "title": "Ma integration modes"
+    },
+    {
+     "title": "Parenting advantage"
+    },
+    {
+     "title": "Pipeline to platform disruption"
+    },
+    {
+     "title": "Platform eight strategy launch"
+    },
+    {
+     "title": "Platform governance four tools"
+    },
+    {
+     "title": "Platform metrics lifecycle"
+    },
+    {
+     "title": "Platform monetization levers"
+    }
+   ]
+  },
+  {
+   "name": "Creativity",
+   "frameworks": [
+    {
+     "title": "Bottom up forecast"
+    },
+    {
+     "title": "Dicee curve jumping test"
+    },
+    {
+     "title": "Enchantment endurance stack"
+    },
+    {
+     "title": "Matt planning milestones assumptions tests tasks"
+    },
+    {
+     "title": "Mvvvp curve jumping test"
+    },
+    {
+     "title": "Pitch rule 10 20 30"
+    },
+    {
+     "title": "Rainmaking process"
+    }
+   ]
+  },
+  {
+   "name": "Economics",
+   "frameworks": [
+    {
+     "title": "Ai agent market design framework"
+    },
+    {
+     "title": "Ai bubble evaluation decision tree"
+    },
+    {
+     "title": "Bertrand oligopoly"
+    },
+    {
+     "title": "Break even sales change analysis"
+    },
+    {
+     "title": "Competitive market equilibrium"
+    },
+    {
+     "title": "Competitor price move reaction sequence"
+    },
+    {
+     "title": "Cournot oligopoly"
+    },
+    {
+     "title": "Debt sustainability analysis"
+    },
+    {
+     "title": "Dietz ostrom stern governance principles"
+    },
+    {
+     "title": "Exchange rate determination"
+    },
+    {
+     "title": "Fiscal policy stabilization"
+    },
+    {
+     "title": "Five limiting factors ai marginal returns"
+    },
+    {
+     "title": "Game theory and nash equilibrium"
+    },
+    {
+     "title": "Generous terms of use test"
+    },
+    {
+     "title": "Goods excludability rivalry typology"
+    },
+    {
+     "title": "Industrial policy assessment"
+    },
+    {
+     "title": "Installed base valuation total switching cost"
+    },
+    {
+     "title": "Marginal analysis"
+    },
+    {
+     "title": "Market tipping diagnostic"
+    },
+    {
+     "title": "Market welfare analysis"
+    },
+    {
+     "title": "Monetary policy transmission"
+    }
+   ]
+  },
+  {
+   "name": "Entrepreneurship",
+   "frameworks": [
+    {
+     "title": "Acquisition exit bargaining"
+    },
+    {
+     "title": "Activist capital engagement method"
+    },
+    {
+     "title": "Adjectives to evidence translation"
+    },
+    {
+     "title": "Agree to disagree decision architecture"
+    },
+    {
+     "title": "Aligned incentives compensation architecture"
+    },
+    {
+     "title": "Angel type matrix"
+    },
+    {
+     "title": "Anti dilution repricing"
+    },
+    {
+     "title": "Apelles style strategy"
+    },
+    {
+     "title": "Bayesian decision discipline"
+    },
+    {
+     "title": "Bet on the jockey build racetracks"
+    },
+    {
+     "title": "Bootstrap as control doctrine"
+    },
+    {
+     "title": "Build measure learn loop"
+    },
+    {
+     "title": "Business angel investing"
+    },
+    {
+     "title": "Business model canvas"
+    },
+    {
+     "title": "Business model six dimensions"
+    },
+    {
+     "title": "Calibrated claiming"
+    },
+    {
+     "title": "Cap table mechanics and dilution"
+    },
+    {
+     "title": "Cofounder selection courtship"
+    },
+    {
+     "title": "Company building transition"
+    },
+    {
+     "title": "Compound serendipity network amplification"
+    },
+    {
+     "title": "Content arbitrage via cpa affiliate pivot"
+    }
+   ]
+  },
+  {
+   "name": "Ethics",
+   "frameworks": [
+    {
+     "title": "Carroll csr pyramid"
+    },
+    {
+     "title": "Casino capitalism indicators"
+    },
+    {
+     "title": "Circular economy three principles"
+    },
+    {
+     "title": "Corporate citizenship extended view"
+    },
+    {
+     "title": "Corporation self ownership stout"
+    },
+    {
+     "title": "Csr business society matrix"
+    },
+    {
+     "title": "Deontology categorical imperative"
+    },
+    {
+     "title": "Entrepreneurial state investment pattern"
+    },
+    {
+     "title": "Ethical breakdowns five barriers"
+    },
+    {
+     "title": "Ethical fading"
+    },
+    {
+     "title": "Financial sector productiveness diagnostic"
+    },
+    {
+     "title": "Firm as nexus of reciprocal relationships"
+    },
+    {
+     "title": "Free prior informed consent"
+    },
+    {
+     "title": "Gdp construction critique"
+    },
+    {
+     "title": "Gray zone gaming analysis"
+    },
+    {
+     "title": "Henderson business case for sustainability"
+    },
+    {
+     "title": "Human rights due diligence process"
+    },
+    {
+     "title": "Industrial symbiosis"
+    },
+    {
+     "title": "Innovation value capture diagnostic"
+    },
+    {
+     "title": "Moral disjunction and role coadunation"
+    },
+    {
+     "title": "Multi stakeholder coalition wicked problems"
+    }
+   ]
+  },
+  {
+   "name": "Finance",
+   "frameworks": [
+    {
+     "title": "Acquisition adjusted growth valuation"
+    },
+    {
+     "title": "Adaptive markets hypothesis"
+    },
+    {
+     "title": "Adjusted present value apv"
+    },
+    {
+     "title": "Anchored residual earnings valuation"
+    },
+    {
+     "title": "Balance sheet analysis"
+    },
+    {
+     "title": "Bank valuation economic spread"
+    },
+    {
+     "title": "Barbell strategy"
+    },
+    {
+     "title": "Big market delusion test"
+    },
+    {
+     "title": "Binomial option pricing"
+    },
+    {
+     "title": "Board capture risk reading"
+    },
+    {
+     "title": "Bond pricing and yield to maturity"
+    },
+    {
+     "title": "Capital budgeting decision rules"
+    },
+    {
+     "title": "Capital structure and payout process"
+    },
+    {
+     "title": "Capital structure trade off checklist"
+    },
+    {
+     "title": "Capitalizing intangible investments"
+    },
+    {
+     "title": "Capm cost of equity"
+    },
+    {
+     "title": "Cash flow statement analysis"
+    },
+    {
+     "title": "Corporate bond yield decomposition"
+    },
+    {
+     "title": "Corporate hedging decision"
+    },
+    {
+     "title": "Corporate insurance decision"
+    },
+    {
+     "title": "Corporate risk taking and hedging rules"
+    }
+   ]
+  },
+  {
+   "name": "Innovation",
+   "frameworks": [
+    {
+     "title": "Agile innovation experimentation"
+    },
+    {
+     "title": "Blue ocean strategy"
+    },
+    {
+     "title": "Buying down risk sequencing and parallel paths"
+    },
+    {
+     "title": "Corporate venturing models"
+    },
+    {
+     "title": "Disruptive innovation theory"
+    },
+    {
+     "title": "Exploratory vs validation testing"
+    },
+    {
+     "title": "Gartner hype cycle"
+    },
+    {
+     "title": "Hard use case typology"
+    },
+    {
+     "title": "Incumbent innovation journey"
+    },
+    {
+     "title": "Innovation portfolio matrix"
+    },
+    {
+     "title": "Innovation strategy alignment"
+    },
+    {
+     "title": "Innovators four killer questions"
+    },
+    {
+     "title": "Minimal viable innovation organization"
+    },
+    {
+     "title": "Open innovation"
+    },
+    {
+     "title": "Payoff asymmetry test for variability"
+    },
+    {
+     "title": "Profiting from innovation"
+    },
+    {
+     "title": "Project economic framework cost of delay"
+    },
+    {
+     "title": "Tech platform triple crown"
+    },
+    {
+     "title": "Technology standardization process"
+    }
+   ]
+  },
+  {
+   "name": "International strategy",
+   "frameworks": [
+    {
+     "title": "Adding value internationalization"
+    },
+    {
+     "title": "Cage distance framework"
+    },
+    {
+     "title": "Entry mode selection"
+    },
+    {
+     "title": "Export pricing currency and grey market"
+    },
+    {
+     "title": "Global strategy typology"
+    },
+    {
+     "title": "Hall high low context communication"
+    },
+    {
+     "title": "Hofstede cultural dimensions"
+    },
+    {
+     "title": "Inglehart welzel cultural map"
+    },
+    {
+     "title": "Institutional voids framework"
+    },
+    {
+     "title": "Integration responsiveness framework"
+    },
+    {
+     "title": "Porter diamond national advantage"
+    },
+    {
+     "title": "Subsidiary roles matrix"
+    },
+    {
+     "title": "Tight loose culture"
+    }
+   ]
+  },
+  {
+   "name": "Leadership",
+   "frameworks": [
+    {
+     "title": "Acting speaking with power"
+    },
+    {
+     "title": "Action plan design"
+    },
+    {
+     "title": "Adaptive leadership"
+    },
+    {
+     "title": "Adkar change model"
+    },
+    {
+     "title": "Advocacy reframe negotiate for others"
+    },
+    {
+     "title": "After action review"
+    },
+    {
+     "title": "Ai in hiring assessment"
+    },
+    {
+     "title": "Alternatives generation process"
+    },
+    {
+     "title": "Art of good goodbyes"
+    },
+    {
+     "title": "Ascendant leadership"
+    },
+    {
+     "title": "Auftragstaktik mission command"
+    },
+    {
+     "title": "Authentic leadership true north"
+    },
+    {
+     "title": "Authenticity paradox"
+    },
+    {
+     "title": "Authority signal verification"
+    },
+    {
+     "title": "Big five personality model"
+    },
+    {
+     "title": "Blanchard situational leadership"
+    },
+    {
+     "title": "Bold strokes and long marches"
+    },
+    {
+     "title": "Bridges transition model"
+    },
+    {
+     "title": "Broad framing portfolio of bets"
+    },
+    {
+     "title": "Carnegie be a leader nine ways"
+    },
+    {
+     "title": "Carnegie six ways to make people like you"
+    }
+   ]
+  },
+  {
+   "name": "Marketing",
+   "frameworks": [
+    {
+     "title": "3cs ai marketing framework"
+    },
+    {
+     "title": "A pile b pile envelope test"
+    },
+    {
+     "title": "Advance purchase discount pack"
+    },
+    {
+     "title": "Advertised reference pricing procedure"
+    },
+    {
+     "title": "Ai replacement enhancement psychology"
+    },
+    {
+     "title": "Anchoring procedure"
+    },
+    {
+     "title": "Bdf audience model"
+    },
+    {
+     "title": "Brand equity and management"
+    },
+    {
+     "title": "Brand positioning statement"
+    },
+    {
+     "title": "Bundle design mixed bundles"
+    },
+    {
+     "title": "Buyer negotiation tactics counter policies"
+    },
+    {
+     "title": "Buyer type policy selector"
+    },
+    {
+     "title": "Camouflage borrowed believability"
+    },
+    {
+     "title": "Category life cycle pricing"
+    },
+    {
+     "title": "Challenger selling model"
+    },
+    {
+     "title": "Charm pricing procedure"
+    },
+    {
+     "title": "Commercial teaching four rules"
+    },
+    {
+     "title": "Copy length grid"
+    },
+    {
+     "title": "Copy sequence anticipate and answer"
+    },
+    {
+     "title": "Copywriting assignment preparation"
+    },
+    {
+     "title": "Copywriting process incubation edit"
+    }
+   ]
+  },
+  {
+   "name": "Negotiation",
+   "frameworks": [
+    {
+     "title": "Batna zopa claiming value"
+    },
+    {
+     "title": "Breakthrough negotiation five step"
+    },
+    {
+     "title": "Concession making rules"
+    },
+    {
+     "title": "Contingency contracts"
+    },
+    {
+     "title": "Cross cultural negotiation preparation"
+    },
+    {
+     "title": "Deadline disclosure rule"
+    },
+    {
+     "title": "Deal method threat response"
+    },
+    {
+     "title": "Defensiveness trigger language and repairs"
+    },
+    {
+     "title": "Emotional performance playbook"
+    },
+    {
+     "title": "Facilitated fact matrix team decision"
+    },
+    {
+     "title": "Fifteen rules job offer negotiation"
+    },
+    {
+     "title": "Four horsemen negotiator power"
+    },
+    {
+     "title": "Gender aware negotiation moves"
+    },
+    {
+     "title": "Grievance first conflict repair"
+    },
+    {
+     "title": "Hidden agenda deal check"
+    },
+    {
+     "title": "Integrative negotiation value creation"
+    },
+    {
+     "title": "Interests issues positions"
+    },
+    {
+     "title": "Interests rights power dispute resolution"
+    },
+    {
+     "title": "Investigative negotiation"
+    },
+    {
+     "title": "Lewicki six element apology"
+    },
+    {
+     "title": "Mid cycle renegotiation legitimacy test"
+    }
+   ]
+  },
+  {
+   "name": "Nonmarket",
+   "frameworks": [
+    {
+     "title": "Economic coercion assessment"
+    },
+    {
+     "title": "Energy market failure conditions"
+    },
+    {
+     "title": "Energy supply dependency assessment"
+    },
+    {
+     "title": "Energy transition phases"
+    },
+    {
+     "title": "Energy trilemma"
+    },
+    {
+     "title": "Kaya identity"
+    },
+    {
+     "title": "Non market strategy cycle"
+    }
+   ]
+  },
+  {
+   "name": "Operations",
+   "frameworks": [
+    {
+     "title": "Af ratio demand distribution"
+    },
+    {
+     "title": "Agentic ai autonomy spectrum"
+    },
+    {
+     "title": "Appointment system design"
+    },
+    {
+     "title": "Batch sizing under setup times"
+    },
+    {
+     "title": "Cadence and synchronization design"
+    },
+    {
+     "title": "Capacity management"
+    },
+    {
+     "title": "Control charts spc loop"
+    },
+    {
+     "title": "Conwip pull system design"
+    },
+    {
+     "title": "Cost of delay sequencing"
+    },
+    {
+     "title": "Customer defection economics"
+    },
+    {
+     "title": "Development network routing"
+    },
+    {
+     "title": "Ds project delivery lifecycle"
+    },
+    {
+     "title": "Due date quoting and schedule feasibility"
+    },
+    {
+     "title": "Economic control variables and tripwires"
+    },
+    {
+     "title": "Effective process time outage profile"
+    },
+    {
+     "title": "Eoq model"
+    },
+    {
+     "title": "Erlang loss system"
+    },
+    {
+     "title": "Expected value framework ml"
+    },
+    {
+     "title": "Garvin eight dimensions quality"
+    },
+    {
+     "title": "Internal pricing for shared resources"
+    },
+    {
+     "title": "Inventory diagnosis five reasons"
+    }
+   ]
+  },
+  {
+   "name": "Personal effectiveness",
+   "frameworks": [
+    {
+     "title": "Ability chain diagnosis"
+    },
+    {
+     "title": "Behavior troubleshooting pamp"
+    },
+    {
+     "title": "Capital driven mission little bets"
+    },
+    {
+     "title": "Career capital theory"
+    },
+    {
+     "title": "Deliberate practice five habits craftsman"
+    },
+    {
+     "title": "Environment design for habits"
+    },
+    {
+     "title": "Fogg behavior model bmap"
+    },
+    {
+     "title": "Four laws of behavior change"
+    },
+    {
+     "title": "Habit loop cue craving response reward"
+    },
+    {
+     "title": "Habit stacking and anchoring"
+    },
+    {
+     "title": "Habit tracking"
+    },
+    {
+     "title": "Identity based habits"
+    },
+    {
+     "title": "Law of financial viability"
+    },
+    {
+     "title": "Law of remarkability"
+    },
+    {
+     "title": "Planner doer self control system"
+    },
+    {
+     "title": "Prompt types person context action"
+    },
+    {
+     "title": "Shrink the behavior"
+    },
+    {
+     "title": "Two control traps"
+    }
+   ]
+  },
+  {
+   "name": "Personal finance",
+   "frameworks": [
+    {
+     "title": "Adviser and product conflict screen"
+    },
+    {
+     "title": "Annuitization timing"
+    },
+    {
+     "title": "Asymmetric risk boldness"
+    },
+    {
+     "title": "Automatic money flow"
+    },
+    {
+     "title": "Bubble diagnosis four ingredients four symptoms"
+    },
+    {
+     "title": "Conscious spending plan"
+    },
+    {
+     "title": "Cost arithmetic of investing"
+    },
+    {
+     "title": "Deep risk triage"
+    },
+    {
+     "title": "Define the game time horizon alignment"
+    },
+    {
+     "title": "Experiences as investment memory dividend"
+    },
+    {
+     "title": "Factor tilt decision"
+    },
+    {
+     "title": "Four dimensions of market return"
+    },
+    {
+     "title": "Gift bequest timing three rs"
+    },
+    {
+     "title": "Go for big wins"
+    },
+    {
+     "title": "Human capital adjusted asset allocation"
+    },
+    {
+     "title": "Index fund winners game strategy"
+    },
+    {
+     "title": "Joint life insurance and asset allocation"
+    },
+    {
+     "title": "Ladder of personal finance"
+    },
+    {
+     "title": "Liability matching burn rate portfolio"
+    },
+    {
+     "title": "Life cycle risk to hedge map"
+    },
+    {
+     "title": "Lump sum vs dca vs value averaging"
+    }
+   ]
+  },
+  {
+   "name": "Social entrepreneurship",
+   "frameworks": [
+    {
+     "title": "Baco best available charitable option"
+    },
+    {
+     "title": "Evpa impact measurement management process"
+    },
+    {
+     "title": "Financing instrument selection for social enterprises"
+    },
+    {
+     "title": "Imm governance model selection"
+    },
+    {
+     "title": "Imm maturity self assessment"
+    },
+    {
+     "title": "Impact due diligence process"
+    },
+    {
+     "title": "Impact investing spectrum"
+    },
+    {
+     "title": "Impact investment process"
+    },
+    {
+     "title": "Impact management project five dimensions"
+    },
+    {
+     "title": "Impact thesis design"
+    },
+    {
+     "title": "Impact value chain logic model"
+    },
+    {
+     "title": "Innovation pathologies diagnostic"
+    },
+    {
+     "title": "Non financial support process"
+    },
+    {
+     "title": "Social enterprise scaling strategy"
+    },
+    {
+     "title": "Social entrepreneurial process"
+    },
+    {
+     "title": "Social impact bond design"
+    },
+    {
+     "title": "Spectrum of social enterprise business models"
+    },
+    {
+     "title": "Sroi social return on investment"
+    },
+    {
+     "title": "Theory of change"
+    }
+   ]
+  },
+  {
+   "name": "Supply chain management",
+   "frameworks": [
+    {
+     "title": "Base plus surge tailored sourcing"
+    },
+    {
+     "title": "Blockchain supply chain transparency"
+    },
+    {
+     "title": "Bullwhip effect"
+    },
+    {
+     "title": "Commodity price risk mitigation by horizon"
+    },
+    {
+     "title": "Component sourcing strategy drivers"
+    },
+    {
+     "title": "Delayed differentiation"
+    },
+    {
+     "title": "Digital twin operations"
+    },
+    {
+     "title": "Distribution network and channel design"
+    },
+    {
+     "title": "Flat cost near optimal design"
+    },
+    {
+     "title": "Flexibility network design"
+    },
+    {
+     "title": "Flexibility option value decision tree"
+    },
+    {
+     "title": "Global network design"
+    },
+    {
+     "title": "Horizontal collaboration in shared shortage"
+    },
+    {
+     "title": "Index pegged surcharge contract"
+    },
+    {
+     "title": "It investment fit and portfolio"
+    },
+    {
+     "title": "Location pooling and consolidated distribution"
+    },
+    {
+     "title": "Offshoring vs nearshoring matrix"
+    },
+    {
+     "title": "Prevention detection response balance"
+    },
+    {
+     "title": "Procurement risk contract portfolio"
+    },
+    {
+     "title": "Product design supply chain matrix"
+    },
+    {
+     "title": "Resilience options redundancy vs flexibility"
+    }
+   ]
+  },
+  {
+   "name": "Technology digital business",
+   "frameworks": [
+    {
+     "title": "Ai factory architecture"
+    },
+    {
+     "title": "Collision curve"
+    },
+    {
+     "title": "Eight subscription growth strategies"
+    },
+    {
+     "title": "Enterprise genai adoption playbook"
+    },
+    {
+     "title": "Fish model transition"
+    },
+    {
+     "title": "Five ai leadership principles"
+    },
+    {
+     "title": "Five ethical risks ai"
+    },
+    {
+     "title": "Four stage operating model transformation"
+    },
+    {
+     "title": "Keystone strategy"
+    },
+    {
+     "title": "Open vs proprietary technology strategy"
+    },
+    {
+     "title": "Padre operating model"
+    },
+    {
+     "title": "Should we ai this toolkit"
+    },
+    {
+     "title": "Strategic network analysis"
+    },
+    {
+     "title": "Subscriber centric it architecture"
+    },
+    {
+     "title": "Subscription economy income statement"
+    },
+    {
+     "title": "Subscription pricing consumption capability"
+    }
+   ]
+  }
+ ]
+}

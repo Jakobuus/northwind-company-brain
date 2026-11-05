@@ -1,0 +1,15 @@
+deal_id,account,country,model,units,stage,close_date,note
+D-2601,Fietshuis Utrecht,NL,T1,12,proposal sent,2026-11-20,pipeline snapshot 2026-10-30
+D-2602,Radhaus Mitte,DE,T1,20,negotiation,2026-11-27,
+D-2603,Velo Haven Antwerpen,BE,T1,8,contract out,2026-11-13,
+D-2604,Stadsfiets Groningen,NL,T1,15,negotiation,2026-12-04,
+D-2605,Rijwiel Noord Hamburg,DE,T1,10,proposal sent,2026-12-11,
+D-2606,Zweirad Kiez Leipzig,DE,T1,6,won,2026-10-29,
+D-2607,Fietsplein Delft,NL,T1,9,proposal sent,2026-11-24,
+D-2608,Pedal and Co Eindhoven,NL,T1,14,contract out,2026-11-18,
+D-2609,Radwerk Bremen,DE,T1,7,negotiation,2026-12-08,
+D-2610,Dunen Bikes Haarlem,NL,T1,11,proposal sent,2026-12-15,
+D-2611,Kettingkamer Gent,BE,T1,5,won,2026-10-22,
+D-2612,Radhaus Mitte,DE,T2,4,waiting for price,2027-01-15,T2 pre-order
+D-2613,Stadsfiets Groningen,NL,T2,3,waiting for price,2027-01-15,T2 pre-order
+D-2614,Spokenhof Koln,DE,T2,2,waiting for price,2027-01-22,T2 pre-order

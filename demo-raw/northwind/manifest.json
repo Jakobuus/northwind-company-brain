@@ -1,0 +1,1664 @@
+{
+ "company": {
+  "id": "northwind",
+  "name": "Northwind",
+  "today": "2026-11-04",
+  "password_convention": "Demo123!",
+  "email_domain": "northwind.example"
+ },
+ "departments": [
+  {
+   "slug": "leadership",
+   "name": "Leadership",
+   "members": [
+    "clara",
+    "mia",
+    "niklas"
+   ],
+   "leads": [
+    "clara"
+   ],
+   "topics": [
+    "acquisition",
+    "restructuring",
+    "board",
+    "strategy"
+   ]
+  },
+  {
+   "slug": "product-engineering",
+   "name": "Product & Engineering",
+   "members": [
+    "tobias",
+    "priya",
+    "ingrid",
+    "felix",
+    "oskar"
+   ],
+   "leads": [
+    "tobias",
+    "priya"
+   ],
+   "topics": [
+    "firmware",
+    "architecture",
+    "prototype"
+   ]
+  },
+  {
+   "slug": "sales",
+   "name": "Sales",
+   "members": [
+    "jakob",
+    "elena",
+    "sanne",
+    "lukas",
+    "daan",
+    "mila",
+    "noah"
+   ],
+   "leads": [
+    "jakob",
+    "elena",
+    "sanne"
+   ],
+   "topics": [
+    "pipeline",
+    "quota",
+    "dealers",
+    "dealer",
+    "discount",
+    "discounts"
+   ]
+  },
+  {
+   "slug": "marketing",
+   "name": "Marketing",
+   "members": [
+    "lea",
+    "marta",
+    "ben"
+   ],
+   "leads": [
+    "lea"
+   ],
+   "topics": [
+    "campaign",
+    "campaigns",
+    "brand",
+    "website"
+   ]
+  },
+  {
+   "slug": "operations",
+   "name": "Operations & Supply",
+   "members": [
+    "sofia",
+    "mateo",
+    "tomasz",
+    "aylin"
+   ],
+   "leads": [
+    "sofia"
+   ],
+   "topics": [
+    "supplier",
+    "suppliers",
+    "logistics",
+    "inventory",
+    "deliveries"
+   ]
+  },
+  {
+   "slug": "finance",
+   "name": "Finance",
+   "members": [
+    "jonas",
+    "noor",
+    "carl"
+   ],
+   "leads": [
+    "jonas"
+   ],
+   "topics": [
+    "pricing",
+    "price",
+    "prices",
+    "budget",
+    "forecast",
+    "margin"
+   ]
+  },
+  {
+   "slug": "people",
+   "name": "People",
+   "members": [
+    "hannah",
+    "zoe",
+    "ravi"
+   ],
+   "leads": [
+    "hannah"
+   ],
+   "topics": [
+    "salary",
+    "salaries",
+    "compensation",
+    "bonus",
+    "hiring"
+   ]
+  },
+  {
+   "slug": "customer-care",
+   "name": "Customer Care",
+   "members": [
+    "yara",
+    "pieter",
+    "greta",
+    "ines"
+   ],
+   "leads": [
+    "yara"
+   ],
+   "topics": [
+    "complaints",
+    "tickets",
+    "returns",
+    "refunds"
+   ]
+  }
+ ],
+ "people": [
+  {
+   "id": "clara",
+   "name": "Clara Vogel",
+   "email": "clara@northwind.example",
+   "password": "Demo123!",
+   "title": "CEO and co-founder",
+   "dept": "leadership",
+   "lead": true,
+   "role": "OWNER",
+   "grants": []
+  },
+  {
+   "id": "mia",
+   "name": "Mia Janssen",
+   "email": "mia@northwind.example",
+   "password": "Demo123!",
+   "title": "Chief of Staff",
+   "dept": "leadership",
+   "lead": false,
+   "role": "ADMIN",
+   "grants": []
+  },
+  {
+   "id": "niklas",
+   "name": "Niklas Roth",
+   "email": "niklas@northwind.example",
+   "password": "Demo123!",
+   "title": "Head of Strategy and Corporate Development",
+   "dept": "leadership",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "tobias",
+   "name": "Tobias Weber",
+   "email": "tobias@northwind.example",
+   "password": "Demo123!",
+   "title": "Head of Engineering",
+   "dept": "product-engineering",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "priya",
+   "name": "Priya Nair",
+   "email": "priya@northwind.example",
+   "password": "Demo123!",
+   "title": "Product Manager",
+   "dept": "product-engineering",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "ingrid",
+   "name": "Ingrid Kowalski",
+   "email": "ingrid@northwind.example",
+   "password": "Demo123!",
+   "title": "Senior Battery Engineer (BMS expert)",
+   "dept": "product-engineering",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "felix",
+   "name": "Felix Neumann",
+   "email": "felix@northwind.example",
+   "password": "Demo123!",
+   "title": "Junior Developer",
+   "dept": "product-engineering",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "oskar",
+   "name": "Oskar Lindgren",
+   "email": "oskar@northwind.example",
+   "password": "Demo123!",
+   "title": "Mechanical Engineer",
+   "dept": "product-engineering",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "elena",
+   "name": "Elena Costa",
+   "email": "elena@northwind.example",
+   "password": "Demo123!",
+   "title": "Team Lead, DACH",
+   "dept": "sales",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "daan",
+   "name": "Daan de Vries",
+   "email": "daan@northwind.example",
+   "password": "Demo123!",
+   "title": "SDR, Amsterdam",
+   "dept": "sales",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "lukas",
+   "name": "Lukas Hartmann",
+   "email": "lukas@northwind.example",
+   "password": "Demo123!",
+   "title": "Account Executive, Berlin",
+   "dept": "sales",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "sanne",
+   "name": "Sanne Visser",
+   "email": "sanne@northwind.example",
+   "password": "Demo123!",
+   "title": "Team Lead, Benelux",
+   "dept": "sales",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "jakob",
+   "name": "Jakob Volbracht",
+   "email": "jakob@northwind.example",
+   "password": "Demo123!",
+   "title": "Head of Sales",
+   "dept": "sales",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "mila",
+   "name": "Mila Jansen",
+   "email": "mila@northwind.example",
+   "password": "Demo123!",
+   "title": "SDR, Rotterdam",
+   "dept": "sales",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "noah",
+   "name": "Noah Becker",
+   "email": "noah@northwind.example",
+   "password": "Demo123!",
+   "title": "Account Executive, Munich",
+   "dept": "sales",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "lea",
+   "name": "Lea Bauer",
+   "email": "lea@northwind.example",
+   "password": "Demo123!",
+   "title": "Head of Marketing",
+   "dept": "marketing",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": [
+    "customer-care"
+   ]
+  },
+  {
+   "id": "marta",
+   "name": "Marta Silva",
+   "email": "marta@northwind.example",
+   "password": "Demo123!",
+   "title": "Content Marketer",
+   "dept": "marketing",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "ben",
+   "name": "Ben Okafor",
+   "email": "ben@northwind.example",
+   "password": "Demo123!",
+   "title": "Growth Marketer",
+   "dept": "marketing",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "sofia",
+   "name": "Sofia Marchetti",
+   "email": "sofia@northwind.example",
+   "password": "Demo123!",
+   "title": "COO, Head of Operations",
+   "dept": "operations",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": [
+    "product-engineering"
+   ]
+  },
+  {
+   "id": "mateo",
+   "name": "Mateo Fischer",
+   "email": "mateo@northwind.example",
+   "password": "Demo123!",
+   "title": "Supply Chain Manager",
+   "dept": "operations",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "tomasz",
+   "name": "Tomasz Nowak",
+   "email": "tomasz@northwind.example",
+   "password": "Demo123!",
+   "title": "Production Planner",
+   "dept": "operations",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "aylin",
+   "name": "Aylin Demir",
+   "email": "aylin@northwind.example",
+   "password": "Demo123!",
+   "title": "Logistics Coordinator",
+   "dept": "operations",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "jonas",
+   "name": "Jonas Brandt",
+   "email": "jonas@northwind.example",
+   "password": "Demo123!",
+   "title": "CFO",
+   "dept": "finance",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": [
+    "sales"
+   ]
+  },
+  {
+   "id": "noor",
+   "name": "Noor Haddad",
+   "email": "noor@northwind.example",
+   "password": "Demo123!",
+   "title": "Financial Analyst",
+   "dept": "finance",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "carl",
+   "name": "Carl Ekstrom",
+   "email": "carl@northwind.example",
+   "password": "Demo123!",
+   "title": "Controller",
+   "dept": "finance",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "hannah",
+   "name": "Hannah Lindqvist",
+   "email": "hannah@northwind.example",
+   "password": "Demo123!",
+   "title": "Head of People",
+   "dept": "people",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "zoe",
+   "name": "Zoe Martin",
+   "email": "zoe@northwind.example",
+   "password": "Demo123!",
+   "title": "Recruiter",
+   "dept": "people",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "ravi",
+   "name": "Ravi Shah",
+   "email": "ravi@northwind.example",
+   "password": "Demo123!",
+   "title": "People Operations",
+   "dept": "people",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "yara",
+   "name": "Yara Kamal",
+   "email": "yara@northwind.example",
+   "password": "Demo123!",
+   "title": "Head of Customer Care",
+   "dept": "customer-care",
+   "lead": true,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "pieter",
+   "name": "Pieter Bos",
+   "email": "pieter@northwind.example",
+   "password": "Demo123!",
+   "title": "Support Agent NL",
+   "dept": "customer-care",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "greta",
+   "name": "Greta Fuchs",
+   "email": "greta@northwind.example",
+   "password": "Demo123!",
+   "title": "Support Agent DE",
+   "dept": "customer-care",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  },
+  {
+   "id": "ines",
+   "name": "Ines Moreau",
+   "email": "ines@northwind.example",
+   "password": "Demo123!",
+   "title": "Care Analyst",
+   "dept": "customer-care",
+   "lead": false,
+   "role": "MEMBER",
+   "grants": []
+  }
+ ],
+ "grants": [
+  {
+   "person": "clara",
+   "dept": "product-engineering",
+   "granted_by": "clara"
+  },
+  {
+   "person": "clara",
+   "dept": "sales",
+   "granted_by": "clara"
+  },
+  {
+   "person": "clara",
+   "dept": "marketing",
+   "granted_by": "clara"
+  },
+  {
+   "person": "clara",
+   "dept": "operations",
+   "granted_by": "clara"
+  },
+  {
+   "person": "clara",
+   "dept": "finance",
+   "granted_by": "clara"
+  },
+  {
+   "person": "clara",
+   "dept": "people",
+   "granted_by": "clara"
+  },
+  {
+   "person": "clara",
+   "dept": "customer-care",
+   "granted_by": "clara"
+  },
+  {
+   "person": "jonas",
+   "dept": "sales",
+   "granted_by": "clara"
+  },
+  {
+   "person": "sofia",
+   "dept": "product-engineering",
+   "granted_by": "clara"
+  },
+  {
+   "person": "lea",
+   "dept": "customer-care",
+   "granted_by": "clara"
+  }
+ ],
+ "pending_promotion_requests": [
+  {
+   "file": "sales/wiki-dealer-onboarding.html",
+   "requested_by": "lukas",
+   "to": "company core",
+   "decider": "elena"
+  }
+ ],
+ "batches": [
+  {
+   "id": "B1-core-leadership",
+   "count": 10
+  },
+  {
+   "id": "B2a-engineering-docs",
+   "count": 5
+  },
+  {
+   "id": "B2b-engineering-comms",
+   "count": 6
+  },
+  {
+   "id": "B3-sales",
+   "count": 8
+  },
+  {
+   "id": "B4-marketing",
+   "count": 6
+  },
+  {
+   "id": "B5-operations",
+   "count": 8
+  },
+  {
+   "id": "B6-finance",
+   "count": 7
+  },
+  {
+   "id": "B7-people",
+   "count": 6
+  },
+  {
+   "id": "B8-customer-care",
+   "count": 6
+  },
+  {
+   "id": "L-live-ingest",
+   "count": 3
+  }
+ ],
+ "files": [
+  {
+   "path": "core/company-handbook-overview.md",
+   "format": "md",
+   "author": "clara@northwind.example",
+   "date": "2026-06-02",
+   "dept": "leadership",
+   "layer": "core",
+   "title": "Company handbook: who we are",
+   "key_facts": [
+    "Northwind Bikes is a 29-person e-bike maker: Berlin Kreuzberg (HQ, 22 people) and Amsterdam (sales and design, 7 people), founded 2021.",
+    "Model T1 launched April 2025, retail EUR 2,190, sold in DE/NL/BE through 62 dealers and online.",
+    "Lists the 8 departments and their leads (names from the people table). No T2 price, no T2 date, no Halden."
+   ],
+   "scenario": "",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "core/all-hands-2026-10-30.md",
+   "format": "md",
+   "author": "clara@northwind.example",
+   "date": "2026-10-30",
+   "dept": "leadership",
+   "layer": "core",
+   "title": "All-hands notes 30 Oct 2026",
+   "key_facts": [
+    "We are reviewing how we are organised so we can focus on growth, and no changes to individual roles have been announced.",
+    "Details on restructuring will come from the leadership team when there is something to share.",
+    "T2 prototype build 3 is on track. Q3 revenue was EUR 3.4M. NO acquisition, NO numbers on restructuring."
+   ],
+   "scenario": "S7 general answer for restructuring question",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "core/leadership-decisions-2026-10.md",
+   "format": "md",
+   "author": "clara@northwind.example",
+   "date": "2026-10-14",
+   "dept": "leadership",
+   "layer": "core",
+   "title": "Leadership decisions, October 2026",
+   "key_facts": [
+    "I am setting the launch of the Model T2 for 15 March 2027, and this date is final.",
+    "One more decision: the T2 teaser campaign budget is capped at EUR 40k.",
+    "Must NOT contain T2 price, Halden or restructuring."
+   ],
+   "scenario": "S1a decision (beats Tobias remark)",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "core/values-and-ways-of-working.md",
+   "format": "md",
+   "author": "mia@northwind.example",
+   "date": "2026-05-20",
+   "dept": "leadership",
+   "layer": "core",
+   "title": "Our values and ways of working",
+   "key_facts": [
+    "Four values: build for the rider, be straight, own the outcome, ship small.",
+    "Meetings: default 25 minutes, written notes for every decision, decisions are filed in the brain."
+   ],
+   "scenario": "",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "core/company-calendar-2026-h2.csv",
+   "format": "csv",
+   "author": "mia@northwind.example",
+   "date": "2026-09-01",
+   "dept": "leadership",
+   "layer": "core",
+   "title": "Company calendar H2 2026",
+   "key_facts": [
+    "Columns date,event,owner; 12 rows (all-hands 2026-10-30, team offsite 2026-11-20, holiday closure 2026-12-24 to 2027-01-02, and similar).",
+    "No T2 date, no restructuring or acquisition."
+   ],
+   "scenario": "",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "leadership/leadership-meeting-2026-10-14.vtt",
+   "format": "vtt",
+   "author": "clara@northwind.example",
+   "date": "2026-10-14",
+   "dept": "leadership",
+   "layer": "dept",
+   "title": "Leadership meeting 14 Oct 2026",
+   "key_facts": [
+    "WebVTT 25-35 cues. Speakers only Clara Vogel, Mia Janssen, Niklas Roth (<v Full Name> tags). Agenda: T2 launch, cash.",
+    "I am setting the launch of the Model T2 for 15 March 2027, and this date is final. (Clara)",
+    "We will plan the team calendar around the 15 March 2027 launch. (Mia)",
+    "No price, no Halden, no restructuring."
+   ],
+   "scenario": "S1a origin of decision",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "leadership/board-meeting-2026-10-27.transcript",
+   "format": "transcript",
+   "author": "clara@northwind.example",
+   "date": "2026-10-27",
+   "dept": "leadership",
+   "layer": "dept",
+   "title": "Board meeting 27 Oct 2026",
+   "key_facts": [
+    "Lines like [00:03:10] Clara Vogel: text. Speakers ONLY Clara Vogel, Mia Janssen, Niklas Roth.",
+    "Possible acquisition of competitor Halden Bikes GmbH (Hamburg) for up to EUR 11M.",
+    "Restructuring: merge Amsterdam and Halden sales, 8 roles at risk.",
+    "We will not tell staff anything about the acquisition or the restructuring before 15 December. (Clara)"
+   ],
+   "scenario": "S7 hidden from other departments",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "leadership/board-deck-2026-10-27.pptx",
+   "format": "pptx",
+   "author": "niklas@northwind.example",
+   "date": "2026-10-27",
+   "dept": "leadership",
+   "layer": "dept",
+   "title": "Board deck: Project Harbour (Halden)",
+   "key_facts": [
+    "6 slides: Agenda; Halden Bikes snapshot (revenue EUR 9M, 38 staff, 21k bikes sold); Offer range EUR 9-11M; Restructuring options (merge sales, close the Amsterdam design studio); Timeline to 15 Dec; Risks.",
+    "python-pptx, core properties author Niklas Roth, created 2026-10-27."
+   ],
+   "scenario": "S7 hidden from other departments",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "leadership/strategy-memo-2026.md",
+   "format": "md",
+   "author": "clara@northwind.example",
+   "date": "2026-07-08",
+   "dept": "leadership",
+   "layer": "dept",
+   "title": "Strategy memo 2026",
+   "key_facts": [
+    "Three priorities: launch the T2, double the dealer network in DE/NL, reach 38% gross margin.",
+    "Uses the words strategy and board. No acquisition, no restructuring, no T2 date."
+   ],
+   "scenario": "",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "private/clara/private-note-halden-ceiling.md",
+   "format": "md",
+   "author": "clara@northwind.example",
+   "date": "2026-10-28",
+   "dept": "leadership",
+   "layer": "private",
+   "title": "Clara private: Halden ceiling",
+   "key_facts": [
+    "My personal ceiling for Halden is EUR 11M and I am considering stepping back as CEO after the integration.",
+    "(private: only Clara can read it)"
+   ],
+   "scenario": "S2b private stays private",
+   "batch": "B1-core-leadership",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/bms-explained-for-everyone.md",
+   "format": "md",
+   "author": "ingrid@northwind.example",
+   "date": "2026-08-04",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "BMS explained in plain words",
+   "key_facts": [
+    "Plain-language explainer of our battery management system (BMS): what a BMS does, cell balancing, state-of-charge estimate, thermal cutoff. Say BMS or battery management system at least 8 times.",
+    "Names Ingrid Kowalski as the contact for BMS questions.",
+    "Kept in the department internal ring on purpose: Tobias promotes it to company core in the video."
+   ],
+   "scenario": "S3 promote dept->core by lead Tobias; X who-knows-BMS",
+   "batch": "B2a-engineering-docs",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/bms-design-doc-v3.md",
+   "format": "md",
+   "author": "ingrid@northwind.example",
+   "date": "2026-07-22",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "BMS design doc v3",
+   "key_facts": [
+    "16S pack, passive cell balancing at 60 mA, Kalman-filter state-of-charge estimate, thermal cutoff at 60 C, CAN interface.",
+    "Ingrid is sole author; BMS at least 15 times; sections on balancing and SoC drift."
+   ],
+   "scenario": "X who-knows-BMS evidence",
+   "batch": "B2a-engineering-docs",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/bms-cell-balancing-review.md",
+   "format": "md",
+   "author": "ingrid@northwind.example",
+   "date": "2026-09-29",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "BMS cell balancing review (200 cycles)",
+   "key_facts": [
+    "Review of BMS cell balancing over 200 charge cycles; recommends active balancing for T2 if drift exceeds 3%.",
+    "400-600 words, heavy BMS vocabulary."
+   ],
+   "scenario": "X who-knows-BMS evidence",
+   "batch": "B2a-engineering-docs",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/t2-architecture.md",
+   "format": "md",
+   "author": "tobias@northwind.example",
+   "date": "2026-08-18",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "T2 architecture",
+   "key_facts": [
+    "Mid-drive motor 85 Nm, 720 Wh pack from Cellwerk GmbH, frame from Rahmenbau Nord, firmware stack, prototype build 3 in Berlin.",
+    "One sentence crediting Ingrid for the BMS. NO launch date, NO price."
+   ],
+   "scenario": "",
+   "batch": "B2a-engineering-docs",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/t2-product-requirements.docx",
+   "format": "docx",
+   "author": "priya@northwind.example",
+   "date": "2026-09-12",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "T2 product requirements",
+   "key_facts": [
+    "1-2 pages docx, author Priya Nair, created 2026-09-12. Riders want 120 km range, quiet motor, removable battery.",
+    "Requirement: the BMS must report cell temperature every second. NO price, NO date."
+   ],
+   "scenario": "",
+   "batch": "B2a-engineering-docs",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/standup-2026-09-08.vtt",
+   "format": "vtt",
+   "author": "tobias@northwind.example",
+   "date": "2026-09-08",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "Engineering standup 8 Sep 2026",
+   "key_facts": [
+    "WebVTT 20 cues, speakers Tobias Weber, Ingrid Kowalski, Felix Neumann.",
+    "Ingrid reports BMS cell balancing test results and a BMS firmware bug in the SoC estimate; Felix on the OTA update."
+   ],
+   "scenario": "X who-knows-BMS evidence",
+   "batch": "B2b-engineering-comms",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/standup-2026-10-06.vtt",
+   "format": "vtt",
+   "author": "tobias@northwind.example",
+   "date": "2026-10-06",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "Engineering standup 6 Oct 2026",
+   "key_facts": [
+    "Same format and speakers. Ingrid: BMS state-of-charge drift fixed in build 3; BMS thermal cutoff test passed. Felix: firmware 0.9 release.",
+    "No launch date talk."
+   ],
+   "scenario": "X who-knows-BMS evidence",
+   "batch": "B2b-engineering-comms",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/team-chat-eng-t2-2026-11-02.md",
+   "format": "md",
+   "author": "tobias@northwind.example",
+   "date": "2026-11-02",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "#eng-t2 chat export 2 Nov 2026",
+   "key_facts": [
+    "Lines 'Name: text' (Tobias Weber, Felix Neumann, Ingrid Kowalski).",
+    "Realistically we are looking at April for the T2 launch. (Tobias, keep the hedge: it is a remark)",
+    "Others react casually (fingers crossed)."
+   ],
+   "scenario": "S1a remark (loses to Clara's decision, shown as conflict)",
+   "batch": "B2b-engineering-comms",
+   "seed": true
+  },
+  {
+   "path": "product-engineering/firmware-0.9-release-notes.md",
+   "format": "md",
+   "author": "felix@northwind.example",
+   "date": "2026-10-19",
+   "dept": "product-engineering",
+   "layer": "dept",
+   "title": "Firmware 0.9 release notes",
+   "key_facts": [
+    "OTA updater, ride-mode tuning, 12 bug fixes; one line: BMS telemetry fields added (thanks Ingrid)."
+   ],
+   "scenario": "",
+   "batch": "B2b-engineering-comms",
+   "seed": true
+  },
+  {
+   "path": "private/ingrid/private-note-fast-charge.md",
+   "format": "md",
+   "author": "ingrid@northwind.example",
+   "date": "2026-10-30",
+   "dept": "product-engineering",
+   "layer": "private",
+   "title": "Ingrid private: fast-charge temperature worry",
+   "key_facts": [
+    "I am worried about the cell temperature gradient during 45 C fast charging and I have not told Tobias yet.",
+    "Plans to test first. Hidden from Tobias until Ingrid commits it to the department."
+   ],
+   "scenario": "S2 commit private -> department in the video",
+   "batch": "B2b-engineering-comms",
+   "seed": true
+  },
+  {
+   "path": "private/felix/private-note-offer.md",
+   "format": "md",
+   "author": "felix@northwind.example",
+   "date": "2026-10-24",
+   "dept": "product-engineering",
+   "layer": "private",
+   "title": "Felix private: outside offer",
+   "key_facts": [
+    "I have an offer from a Munich startup, I would ask for EUR 78k, and I do not trust the pay review.",
+    "Never committed. Nobody (not even Clara, Hannah or Tobias) can read it."
+   ],
+   "scenario": "S2b private stays private",
+   "batch": "B2b-engineering-comms",
+   "seed": true
+  },
+  {
+   "path": "sales/battery-lead-time-email.eml",
+   "format": "eml",
+   "author": "elena@northwind.example",
+   "date": "2026-08-19",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Battery pack lead time for dealer planning",
+   "key_facts": [
+    "From Elena Costa to Sofia Marchetti, cc Daan de Vries, Date 2026-08-19.",
+    "My estimate is that the lead time for battery packs from Cellwerk is 6 weeks.",
+    "Hedge: based on what Cellwerk told us in the spring."
+   ],
+   "scenario": "S1c estimate (loses to Mateo's measurement)",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/pipeline-2026-q4.csv",
+   "format": "csv",
+   "author": "sanne@northwind.example",
+   "date": "2026-10-30",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Q4 2026 pipeline",
+   "key_facts": [
+    "Columns deal_id,account,country,model,units,stage,close_date; 14 dealer deals (T1 plus 3 T2 pre-orders with stage 'waiting for price').",
+    "Invented dealers (Fietshuis Utrecht, Radhaus Mitte, ...). Date 2026-10-30 in a note column."
+   ],
+   "scenario": "S4 granted outsider Jonas reads, Noor does not",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/q3-sales-review.md",
+   "format": "md",
+   "author": "elena@northwind.example",
+   "date": "2026-10-08",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Q3 sales review",
+   "key_facts": [
+    "1,480 T1 bikes sold in Q3, EUR 3.4M revenue, NL +22%, 4 new dealers.",
+    "No T2 price or date."
+   ],
+   "scenario": "S4 granted outsider",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/dealer-call-fietshuis-2026-10-12.vtt",
+   "format": "vtt",
+   "author": "daan@northwind.example",
+   "date": "2026-10-12",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Dealer call debrief: Fietshuis Utrecht",
+   "key_facts": [
+    "WebVTT 15 cues, speakers Daan de Vries and Elena Costa. Financing terms 60 days, demo bike request.",
+    "No launch or price numbers."
+   ],
+   "scenario": "",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/dealer-network-plan.md",
+   "format": "md",
+   "author": "elena@northwind.example",
+   "date": "2026-09-03",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Dealer network plan",
+   "key_facts": [
+    "Grow from 62 to 100 dealers in DE/NL by end of 2027; priorities by region."
+   ],
+   "scenario": "",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/wiki-dealer-onboarding.html",
+   "format": "html",
+   "author": "lukas@northwind.example",
+   "date": "2026-05-12",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Wiki: dealer onboarding checklist",
+   "key_facts": [
+    "5-step onboarding checklist, contacts Elena and Daan, demo bike policy (1 demo bike per 10 units ordered).",
+    "Lukas asked for this to go to company core; the request stays pending in Elena's Approvals inbox."
+   ],
+   "scenario": "S3 pending promotion request (Lukas -> Elena)",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/dealer-discount-policy.docx",
+   "format": "docx",
+   "author": "elena@northwind.example",
+   "date": "2026-08-25",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Dealer discount policy",
+   "key_facts": [
+    "Standard dealer discount 12%; volume discount 15% above 20 bikes per order. docx, author Elena Costa, created 2026-08-25.",
+    "Uses the words discount and dealers."
+   ],
+   "scenario": "",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "sales/quota-by-rep-2026-h2.csv",
+   "format": "csv",
+   "author": "sanne@northwind.example",
+   "date": "2026-07-01",
+   "dept": "sales",
+   "layer": "dept",
+   "title": "Quota by rep H2 2026",
+   "key_facts": [
+    "Columns rep,region,quota_units,booked_units; Daan, Lukas, Elena rows. Uses the word quota."
+   ],
+   "scenario": "",
+   "batch": "B3-sales",
+   "seed": true
+  },
+  {
+   "path": "marketing/wiki-product-lineup.html",
+   "format": "html",
+   "author": "lea@northwind.example",
+   "date": "2026-09-15",
+   "dept": "marketing",
+   "layer": "dept-core",
+   "title": "Wiki: product lineup",
+   "key_facts": [
+    "T1 (500 Wh, retail EUR 2,190), Model T2 (mid-drive, 720 Wh pack, in development, no price), accessories. Small table and 3 headings.",
+    "Dept-core ring: Lea shares it with everyone."
+   ],
+   "scenario": "dept-core example",
+   "batch": "B4-marketing",
+   "seed": true
+  },
+  {
+   "path": "marketing/brand-guidelines.pptx",
+   "format": "pptx",
+   "author": "marta@northwind.example",
+   "date": "2026-04-10",
+   "dept": "marketing",
+   "layer": "dept-core",
+   "title": "Brand guidelines",
+   "key_facts": [
+    "6 slides: logo, colours (Northwind teal), tone of voice (straight, warm), photography, do and don't. Author Marta Silva."
+   ],
+   "scenario": "dept-core example",
+   "batch": "B4-marketing",
+   "seed": true
+  },
+  {
+   "path": "marketing/campaign-brief-t2-teaser.md",
+   "format": "md",
+   "author": "lea@northwind.example",
+   "date": "2026-10-20",
+   "dept": "marketing",
+   "layer": "dept",
+   "title": "T2 teaser campaign brief",
+   "key_facts": [
+    "Teaser budget EUR 40k, runs January to March 2027, channels: Instagram, YouTube, dealer windows.",
+    "No price."
+   ],
+   "scenario": "",
+   "batch": "B4-marketing",
+   "seed": true
+  },
+  {
+   "path": "marketing/website-traffic-2026-q3.csv",
+   "format": "csv",
+   "author": "ben@northwind.example",
+   "date": "2026-10-09",
+   "dept": "marketing",
+   "layer": "dept",
+   "title": "Website traffic Q3 2026",
+   "key_facts": [
+    "Columns month,sessions,conversion_pct,source; Jul-Sep rows by source (organic, paid, referral). Uses the word website."
+   ],
+   "scenario": "",
+   "batch": "B4-marketing",
+   "seed": true
+  },
+  {
+   "path": "marketing/content-calendar-2026-q4.md",
+   "format": "md",
+   "author": "marta@northwind.example",
+   "date": "2026-10-02",
+   "dept": "marketing",
+   "layer": "dept",
+   "title": "Content calendar Q4 2026",
+   "key_facts": [
+    "Weekly posts, 2 videos per month, customer story in November. Uses the word campaign."
+   ],
+   "scenario": "",
+   "batch": "B4-marketing",
+   "seed": true
+  },
+  {
+   "path": "marketing/newsletter-draft-november.eml",
+   "format": "eml",
+   "author": "marta@northwind.example",
+   "date": "2026-10-29",
+   "dept": "marketing",
+   "layer": "dept",
+   "title": "Newsletter draft November",
+   "key_facts": [
+    "From Marta Silva to Lea Bauer, Date 2026-10-29: draft of the November rider newsletter, asks for feedback on the headline."
+   ],
+   "scenario": "",
+   "batch": "B4-marketing",
+   "seed": true
+  },
+  {
+   "path": "operations/supplier-lead-time-report-2026-10-28.md",
+   "format": "md",
+   "author": "mateo@northwind.example",
+   "date": "2026-10-28",
+   "dept": "operations",
+   "layer": "dept-core",
+   "title": "Supplier lead-time report (Cellwerk)",
+   "key_facts": [
+    "Measured on 8 actual deliveries between February and October 2026, the average lead time for Cellwerk battery packs is 9 weeks.",
+    "Range 8-10 weeks, recommends planning with 10 weeks.",
+    "Dept-core ring: Sofia shares it company-wide."
+   ],
+   "scenario": "S1c observation (beats Elena's 6-week estimate)",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/battery-deliveries-2026.csv",
+   "format": "csv",
+   "author": "mateo@northwind.example",
+   "date": "2026-10-28",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Cellwerk battery deliveries 2026",
+   "key_facts": [
+    "Columns po,supplier,ordered_date,delivered_date,weeks; 8 Cellwerk GmbH deliveries Feb-Oct 2026 with weeks 9,8,10,9,9,10,8,9 (average 9.0). Date 2026-10-28 in a note column."
+   ],
+   "scenario": "S1c supporting data",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/supplier-scorecard-2026-q3.xlsx",
+   "format": "xlsx",
+   "author": "mateo@northwind.example",
+   "date": "2026-10-05",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Supplier scorecard Q3 2026",
+   "key_facts": [
+    "Cellwerk GmbH and Rahmenbau Nord: on-time %, defect ppm, price index. Cell A1: Supplier scorecard Q3 2026 (2026-10-05). No lead-time weeks."
+   ],
+   "scenario": "",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/logistics-weekly-2026-10-21.vtt",
+   "format": "vtt",
+   "author": "sofia@northwind.example",
+   "date": "2026-10-21",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Logistics weekly 21 Oct 2026",
+   "key_facts": [
+    "WebVTT 18 cues, speakers Sofia Marchetti, Mateo Fischer, Aylin Demir: inbound freight, Amsterdam warehouse, pallet shortage. No lead-time number."
+   ],
+   "scenario": "",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/inventory-policy.md",
+   "format": "md",
+   "author": "sofia@northwind.example",
+   "date": "2026-06-20",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Inventory policy",
+   "key_facts": [
+    "Safety stock for battery packs is 3 weeks of planned production. Reorder rules for frames and motors."
+   ],
+   "scenario": "",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/cellwerk-contract-email.eml",
+   "format": "eml",
+   "author": "sofia@northwind.example",
+   "date": "2026-09-16",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Cellwerk framework contract",
+   "key_facts": [
+    "From Sofia to Mateo, Date 2026-09-16: framework contract with Cellwerk GmbH signed for 5,000 packs through 2027; next steps for Mateo. No lead-time figure."
+   ],
+   "scenario": "",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/assembly-partner-capacity.md",
+   "format": "md",
+   "author": "tomasz@northwind.example",
+   "date": "2026-08-11",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Assembly partner capacity",
+   "key_facts": [
+    "Assembly partner Werkstatt Spree (Berlin) builds up to 60 bikes per day on two shifts; the paint shop is the bottleneck."
+   ],
+   "scenario": "",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "operations/supplier-threads-2026-10.mbox",
+   "format": "mbox",
+   "author": "mateo@northwind.example",
+   "date": "2026-10-24",
+   "dept": "operations",
+   "layer": "dept",
+   "title": "Supplier email threads October 2026",
+   "key_facts": [
+    "3 messages (Date headers 2026-10-14, -20, -24) between Mateo and Sofia, plus one from external Jens Brauer <jens@cellwerk.example>.",
+    "Our last three deliveries all took 9 or 10 weeks. (Mateo to Sofia)"
+   ],
+   "scenario": "S1c supporting evidence",
+   "batch": "B5-operations",
+   "seed": true
+  },
+  {
+   "path": "finance/t2-pricing-memo-2026-09-10.md",
+   "format": "md",
+   "author": "jonas@northwind.example",
+   "date": "2026-09-10",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "T2 pricing memo 1 (10 Sep)",
+   "key_facts": [
+    "Cost-plus view: unit cost EUR 1,720, a 45% markup gives EUR 2,494.",
+    "I am setting the retail price of the Model T2 at EUR 2,490.",
+    "Fact key: subject model-t2, attribute retail-price."
+   ],
+   "scenario": "S1b owner's first figure",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "finance/t2-pricing-memo-2026-10-21.md",
+   "format": "md",
+   "author": "jonas@northwind.example",
+   "date": "2026-10-21",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "T2 pricing memo 2 (21 Oct)",
+   "key_facts": [
+    "I am replacing my earlier figure: the retail price of the Model T2 is now EUR 2,690.",
+    "3-4 paragraphs on pricing strategy: cost-plus (EUR 2,494) versus value-based; competitor band EUR 2,600-3,100 for comparable 720 Wh mid-drive bikes; survey of 400 riders with median willingness to pay EUR 2,750; price anchoring.",
+    "Links earlier memo [[t2-pricing-memo-2026-09-10]]."
+   ],
+   "scenario": "S1b owner replaces own figure; S5 pricing frameworks",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "finance/finance-sync-2026-10-21.vtt",
+   "format": "vtt",
+   "author": "jonas@northwind.example",
+   "date": "2026-10-21",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "Finance sync 21 Oct 2026",
+   "key_facts": [
+    "WebVTT 14 cues, speakers Jonas Brandt, Noor Haddad, Carl Ekstrom.",
+    "I will publish the memo replacing 2,490 today. (Jonas) Noor reports the rider survey result."
+   ],
+   "scenario": "S1b support",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "finance/budget-2027-draft.xlsx",
+   "format": "xlsx",
+   "author": "jonas@northwind.example",
+   "date": "2026-10-15",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "Budget 2027 draft",
+   "key_facts": [
+    "Revenue sheet: T1 6,500 units x 2,190; T2 4,000 units x 2,690; bikes EUR 25.0M; accessories and service EUR 3.0M; total EUR 28.0M. Costs by department sheet.",
+    "A1: Budget 2027 draft (2026-10-15)."
+   ],
+   "scenario": "S1b consistent",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "finance/q3-close-report.md",
+   "format": "md",
+   "author": "carl@northwind.example",
+   "date": "2026-10-12",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "Q3 close report",
+   "key_facts": [
+    "Q3 revenue EUR 3.4M, gross margin 38%, cash EUR 7.9M."
+   ],
+   "scenario": "",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "finance/cash-forecast-2026-2027.csv",
+   "format": "csv",
+   "author": "noor@northwind.example",
+   "date": "2026-10-26",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "Cash forecast Oct 2026 - Dec 2027",
+   "key_facts": [
+    "Columns month,cash_in_eur,cash_out_eur,closing_cash_eur; Oct 2026 - Dec 2027, starting cash 7.9M. Date 2026-10-26 in a note column. No acquisition."
+   ],
+   "scenario": "",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "finance/margin-analysis-t1.md",
+   "format": "md",
+   "author": "noor@northwind.example",
+   "date": "2026-09-22",
+   "dept": "finance",
+   "layer": "dept",
+   "title": "T1 margin analysis",
+   "key_facts": [
+    "T1 gross margin 38% by channel (dealer 34%, online 44%); material cost trend."
+   ],
+   "scenario": "",
+   "batch": "B6-finance",
+   "seed": true
+  },
+  {
+   "path": "people/hr-handbook-2026.docx",
+   "format": "docx",
+   "author": "hannah@northwind.example",
+   "date": "2026-05-15",
+   "dept": "people",
+   "layer": "dept-core",
+   "title": "HR handbook 2026",
+   "key_facts": [
+    "30 vacation days, 2 remote days per week, parental leave, expense rules, how salary reviews work (no figures). docx author Hannah Lindqvist, created 2026-05-15."
+   ],
+   "scenario": "dept-core example",
+   "batch": "B7-people",
+   "seed": true
+  },
+  {
+   "path": "people/onboarding-checklist.html",
+   "format": "html",
+   "author": "ravi@northwind.example",
+   "date": "2026-03-10",
+   "dept": "people",
+   "layer": "dept-core",
+   "title": "Wiki: new joiner onboarding",
+   "key_facts": [
+    "First-week checklist: laptop, accounts, buddy, brain access. Contact Ravi Shah."
+   ],
+   "scenario": "dept-core example",
+   "batch": "B7-people",
+   "seed": true
+  },
+  {
+   "path": "people/salary-bands-2026.docx",
+   "format": "docx",
+   "author": "hannah@northwind.example",
+   "date": "2026-06-30",
+   "dept": "people",
+   "layer": "dept",
+   "title": "Salary bands 2026 (confidential)",
+   "key_facts": [
+    "Heading: Salary bands 2026 (confidential). EUR per year: L2 Engineer 52-62k; L3 Engineer 62-74k; L4 Senior Engineer 74-90k; L5 Lead 90-110k; Head of department 110-135k; Sales AE 48-60k plus commission."
+   ],
+   "scenario": "S7 hint to Hannah; People internal",
+   "batch": "B7-people",
+   "seed": true
+  },
+  {
+   "path": "people/compensation-review-email.eml",
+   "format": "eml",
+   "author": "hannah@northwind.example",
+   "date": "2026-10-05",
+   "dept": "people",
+   "layer": "dept",
+   "title": "Compensation review cycle",
+   "key_facts": [
+    "From Hannah Lindqvist to Ravi Shah, cc Zoe Martin, Date 2026-10-05: the 2026 bonus pool is EUR 140k; review cycle in January; no individual names."
+   ],
+   "scenario": "",
+   "batch": "B7-people",
+   "seed": true
+  },
+  {
+   "path": "people/hiring-plan-2027.md",
+   "format": "md",
+   "author": "hannah@northwind.example",
+   "date": "2026-10-18",
+   "dept": "people",
+   "layer": "dept",
+   "title": "Hiring plan 2027",
+   "key_facts": [
+    "6 hires in 2027: 2 engineers, 2 sales, 1 operations, 1 customer care. No salaries beyond a bands reference."
+   ],
+   "scenario": "",
+   "batch": "B7-people",
+   "seed": true
+  },
+  {
+   "path": "people/recruiting-pipeline-2026-q4.csv",
+   "format": "csv",
+   "author": "zoe@northwind.example",
+   "date": "2026-10-27",
+   "dept": "people",
+   "layer": "dept",
+   "title": "Recruiting pipeline Q4",
+   "key_facts": [
+    "Columns role,stage,source,start_target; 8 rows with invented candidates by first name only (Software Engineer x3, Sales AE x3, Care Agent x2)."
+   ],
+   "scenario": "",
+   "batch": "B7-people",
+   "seed": true
+  },
+  {
+   "path": "customer-care/support-playbook.md",
+   "format": "md",
+   "author": "yara@northwind.example",
+   "date": "2026-03-02",
+   "dept": "customer-care",
+   "layer": "dept-core",
+   "title": "Support playbook",
+   "key_facts": [
+    "First reply within 4 hours, escalate battery issues to Engineering via Yara, refunds up to EUR 150 without approval."
+   ],
+   "scenario": "dept-core example",
+   "batch": "B8-customer-care",
+   "seed": true
+  },
+  {
+   "path": "customer-care/returns-policy.docx",
+   "format": "docx",
+   "author": "yara@northwind.example",
+   "date": "2026-04-20",
+   "dept": "customer-care",
+   "layer": "dept-core",
+   "title": "Returns policy",
+   "key_facts": [
+    "30-day return window for accessories, 14 days for bikes after delivery; returns and refunds handled by Care. docx author Yara Kamal, created 2026-04-20."
+   ],
+   "scenario": "dept-core example",
+   "batch": "B8-customer-care",
+   "seed": true
+  },
+  {
+   "path": "customer-care/ticket-summary-2026-q3.csv",
+   "format": "csv",
+   "author": "ines@northwind.example",
+   "date": "2026-10-05",
+   "dept": "customer-care",
+   "layer": "dept",
+   "title": "Ticket summary Q3 2026",
+   "key_facts": [
+    "Columns category,tickets,avg_first_response_hours,resolved_pct; 6 categories (battery range, app pairing, brakes, delivery damage, accessories, other). Uses the word tickets."
+   ],
+   "scenario": "",
+   "batch": "B8-customer-care",
+   "seed": true
+  },
+  {
+   "path": "customer-care/customer-feedback-calls-2026-10-15.vtt",
+   "format": "vtt",
+   "author": "yara@northwind.example",
+   "date": "2026-10-15",
+   "dept": "customer-care",
+   "layer": "dept",
+   "title": "Customer feedback calls 15 Oct 2026",
+   "key_facts": [
+    "WebVTT 16 cues, speakers Yara Kamal, Pieter Bos, Greta Fuchs: riders love the quiet motor, complaints about app pairing and slow winter range."
+   ],
+   "scenario": "",
+   "batch": "B8-customer-care",
+   "seed": true
+  },
+  {
+   "path": "customer-care/escalation-email-2026-10-23.eml",
+   "format": "eml",
+   "author": "pieter@northwind.example",
+   "date": "2026-10-23",
+   "dept": "customer-care",
+   "layer": "dept",
+   "title": "Escalation: winter range complaints",
+   "key_facts": [
+    "From Pieter Bos to Yara Kamal, Date 2026-10-23: 6 complaints about range dropping below 40 km in cold weather. Uses the word complaints."
+   ],
+   "scenario": "",
+   "batch": "B8-customer-care",
+   "seed": true
+  },
+  {
+   "path": "customer-care/csat-report-2026-q3.md",
+   "format": "md",
+   "author": "ines@northwind.example",
+   "date": "2026-10-07",
+   "dept": "customer-care",
+   "layer": "dept",
+   "title": "CSAT report Q3 2026",
+   "key_facts": [
+    "CSAT 4.4 out of 5, NPS 41, first response 3.2 hours on average."
+   ],
+   "scenario": "",
+   "batch": "B8-customer-care",
+   "seed": true
+  },
+  {
+   "path": "_live/company-okrs-2027.docx",
+   "format": "docx",
+   "author": "clara@northwind.example",
+   "date": "2026-11-03",
+   "dept": "leadership",
+   "layer": "core",
+   "title": "Company OKRs 2027",
+   "key_facts": [
+    "Owner drops it straight into company core (OWNER/ADMIN may).",
+    "Our 2027 company objective is to reach EUR 28.0M revenue.",
+    "Key results: 100 dealers by end of 2027, T2 launched on 15 March 2027, gross margin 38%.",
+    "docx, 1-2 pages, author Clara Vogel, created 2026-11-03."
+   ],
+   "scenario": "S6 live ingest -> core ring",
+   "batch": "L-live-ingest",
+   "seed": false
+  },
+  {
+   "path": "_live/care-ticket-spike-2026-11-03.csv",
+   "format": "csv",
+   "author": "yara@northwind.example",
+   "date": "2026-11-03",
+   "dept": "customer-care",
+   "layer": "dept",
+   "title": "Ticket spike 27 Oct - 3 Nov",
+   "key_facts": [
+    "Yara drops it into Customer Care internal.",
+    "Columns date,category,tickets,note; 8 rows; battery rattle tickets jump to 23 in the week of 27 Oct, suspected loose battery cradle bolt on T1 batch 14.",
+    "Lea (granted Care internal) sees it; Marta and Ben do not."
+   ],
+   "scenario": "S6 live ingest -> dept internal ring; S4 grant (Lea)",
+   "batch": "L-live-ingest",
+   "seed": false
+  },
+  {
+   "path": "_live/priya-roadmap-doubts.md",
+   "format": "md",
+   "author": "priya@northwind.example",
+   "date": "2026-11-03",
+   "dept": "product-engineering",
+   "layer": "private",
+   "title": "Priya private: roadmap doubts",
+   "key_facts": [
+    "Priya drops it as a private note.",
+    "I doubt that the removable battery requirement fits the March 2027 launch and I want to check with Oskar before I tell Tobias.",
+    "Tobias (her lead) cannot read it."
+   ],
+   "scenario": "S6 live ingest -> private ring",
+   "batch": "L-live-ingest",
+   "seed": false
+  }
+ ]
+}

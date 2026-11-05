@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Rings + cards v4</title>
+<style>
+  :root{--bg:#1e1e1e;--panel:#252526;--line:#333;--txt:#dcddde;--mute:#8b8d91;--accent:#a882ff}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);font:13px/1.45 -apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden}
+  #wrap{display:grid;grid-template-columns:1fr 360px;height:100vh}
+  #left{position:relative}
+  svg{width:100%;height:100%;display:block;cursor:grab}
+  .top{position:absolute;top:12px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:center}
+  .top h1{margin:0;font-size:15px;color:#fff;font-weight:600}.top h1 span{color:var(--mute);font-weight:400}
+  .roles{display:flex;gap:6px;background:#00000055;padding:4px;border-radius:10px;border:1px solid var(--line)}
+  .roles button{background:transparent;color:var(--txt);border:0;padding:6px 12px;border-radius:7px;cursor:pointer;font-size:12.5px}
+  .roles button.on{background:var(--accent);color:#111;font-weight:600}
+  .card{cursor:pointer;transition:opacity .4s}
+  .card text{pointer-events:none}
+  aside{background:var(--panel);border-left:1px solid var(--line);padding:18px;overflow:auto}
+  aside h2{font-size:11px;letter-spacing:.9px;text-transform:uppercase;color:var(--mute);margin:16px 0 8px}aside h2:first-child{margin-top:0}
+  .box{background:#1b1b1c;border:1px solid var(--line);border-radius:8px;padding:12px}
+  .box p{margin:0 0 8px}
+  .hint{border-left:3px solid var(--accent);background:#2a2440;padding:8px 10px;border-radius:5px;margin-top:6px}
+  .flag{border-left:3px solid #ff5c6c;background:#3a2025;padding:8px 10px;border-radius:5px;margin-top:6px}
+  .yaml{font:12px/1.55 ui-monospace,Menlo,monospace;background:#161617;border-radius:6px;padding:8px 10px;color:#b5b9c2;white-space:pre-wrap}
+  .yaml b{color:#a882ff;font-weight:500}
+  .muted{color:var(--mute)}
+  .legend{position:absolute;left:16px;bottom:12px;font-size:11.5px;color:var(--mute);display:flex;gap:14px}
+</style></head><body>
+<div id="wrap"><div id="left">
+  <svg id="s" viewBox="0 0 1200 900"><g id="world"></g></svg>
+  <div class="top"><h1>Northwind Brain <span>· rings + cards + personal ring (mockup v5)</span></h1>
+    <div class="roles"><button data-r="ceo" class="on">Maya · CEO</button><button data-r="raj">Raj · EMEA lead</button><button data-r="lena">Lena · intern</button></div></div>
+  <div class="legend"><span>Rings, inside → out: <b style="color:#ddd">core</b> · everyone · department · restricted · <b style="color:#fff">personal (per person, owner only)</b></span><span style="color:#ff5c6c">- - conflict</span><span style="color:#4fd1a5">— replaces</span><span>scroll = zoom · drag = pan</span></div>
+</div>
+<aside>
+  <h2>Question</h2><div class="box">"What's our plan for the SMB segment this quarter?"</div>
+  <h2>Brain's answer</h2><div class="box" id="ans"></div>
+  <h2>Card</h2><div class="box" id="note"><span class="muted">Click a card.</span></div>
+</aside></div>
+<script>
+const NS="http://www.w3.org/2000/svg",W=document.getElementById("world");
+const CX=600,CY=430, R=[0,118,215,300,380,470];   // core | everyone | department | restricted | personal
+const PEOPLE={sales:[['raj','Raj'],['sven','Sven']],marketing:[['sofia','Sofia'],['lena','Lena']],product:[['tom','Tom']],finance:[['chen','Chen']],leadership:[['maya','Maya']],people:[['ana','Ana']]};
+const ME={ceo:'maya',raj:'raj',lena:'lena'};
+const MYNOTES={maya:['Board talking points','Thoughts on Raj 1:1'],raj:['Deal notes Acme','My Q4 worries'],lena:['Campaign ideas','Questions for Sofia']};
+const DEP=[ // id,name,color,owner,readers
+ ["sales","Sales · EMEA","#4fa3ff","Raj",["ceo","raj"]],
+ ["marketing","Marketing","#ff9f43","Sofia",["ceo","lena"]],
+ ["product","Product","#4fd1a5","Tom",["ceo","raj","lena"]],
+ ["finance","Finance","#ffd166","Chen",["ceo"]],
+ ["leadership","Leadership","#a882ff","Maya",["ceo"]],
+ ["people","People & HR","#ff6b9d","Ana",["ceo"]],
+];
+// cards: id, dept|core, ring(1 everyone,2 dept,3 restricted), title, meta, kind
+const C=[
+ ["strategy","core",0,"Strategy 2026","doc · 01/09"],["pricing","core",0,"Pricing policy","policy · 12/09"],
+ ["smb","core",0,"SMB market analysis","analysis · 15/10"],["memo","core",0,"Q4 targets memo","doc · 01/10"],
+ ["emea-old","core",0,"EMEA target €4.0M","figure · 01/10","superseded"],["org","core",0,"Org chart","doc · 20/10"],
+ ["playbook","sales",1,"Sales playbook","doc · 02/09"],["pipeline","sales",2,"EMEA pipeline","doc · 29/10"],
+ ["emea-weekly","sales",2,"EMEA weekly 30/10","meeting · 30/10"],["emea-new","sales",2,"EMEA target €3.6M","figure · 30/10"],
+ ["brand","marketing",1,"Brand guide","doc · 05/09"],["mkt-chat","marketing",2,"#marketing 02/11","chat · 02/11"],
+ ["remark","marketing",2,"SMB campaign next week","remark · 02/11","remark"],["persona","marketing",2,"SMB persona","doc · 18/10"],
+ ["roadmap","product",1,"Roadmap H1","doc · 10/10"],["lite","product",1,"Northwind Lite","product · 22/10"],["faq","product",1,"Product FAQ","doc · 25/10"],
+ ["forecast","finance",2,"Q4 forecast","doc · 28/10"],["budget","finance",2,"FY27 budget","doc · 31/10"],["close","finance",3,"October close","meeting · 03/11"],
+ ["board","leadership",2,"Board pre-read","doc · 30/10"],["offsite","leadership",3,"Exec offsite 28/10","meeting · 28/10"],
+ ["pause","leadership",3,"SMB push paused (Q4)","decision · high","decision"],
+ ["hiring","people",2,"Hiring plan","doc · 15/10"],["comp","people",3,"Comp bands","doc · 01/10"],["reorg","people",3,"Reorg proposal","doc · 27/10"],
+];
+const LINKS=[["remark","pause","conflict"],["emea-new","emea-old","replaces"],["emea-weekly","emea-new"],["offsite","pause"],["mkt-chat","remark"],["smb","persona"],["lite","smb"],["memo","emea-old"],["forecast","emea-new"],["pause","lite"]];
+let role="ceo";
+const can=c=>c[1]==="core"||(c[2]===1)||DEP.find(d=>d[0]===c[1])[4].includes(role);
+function el(p,t,a,x){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(x!==undefined)e.textContent=x;p.appendChild(e);return e;}
+function arc(r0,r1,a0,a1){const P=(r,a)=>`${CX+Math.cos(a)*r},${CY+Math.sin(a)*r}`;
+  return `M${P(r0,a0)} A${r0},${r0} 0 0 1 ${P(r0,a1)} L${P(r1,a1)} A${r1},${r1} 0 0 0 ${P(r1,a0)} Z`;}
+const pos={};
+function layout(){
+  const core=C.filter(c=>c[1]==="core");
+  core.forEach((c,i)=>{const cols=2,x=CX-112+(i%cols)*116,y=CY-62+Math.floor(i/cols)*42;pos[c[0]]=[x+52,y+17];});
+  DEP.forEach((d,i)=>{const a0=-Math.PI/2+i*Math.PI/3-Math.PI/6+0.04,a1=a0+Math.PI/3-0.08;
+    for(const ring of [1,2,3]){const cs=C.filter(c=>c[1]===d[0]&&c[2]===ring);const rm=(R[ring]+R[ring+1])/2;
+      cs.forEach((c,j)=>{const a=a0+(a1-a0)*(j+1)/(cs.length+1);pos[c[0]]=[CX+Math.cos(a)*rm,CY+Math.sin(a)*rm];});}});
+}
+function draw(){
+  W.innerHTML="";
+  // rings + slices
+  DEP.forEach((d,i)=>{const a0=-Math.PI/2+i*Math.PI/3-Math.PI/6+0.02,a1=a0+Math.PI/3-0.04;const open=d[4].includes(role);
+    for(const ring of [1,2,3]){const vis=ring===1||open;
+      el(W,"path",{d:arc(R[ring]+3,R[ring+1]-3,a0,a1),fill:d[2],"fill-opacity":vis?0.03+ring*0.025:0.015,stroke:d[2],"stroke-opacity":vis?0.3:0.1,"stroke-dasharray":vis?"":"4 5"});}
+    const am=(a0+a1)/2;const lx=CX+Math.cos(am)*(R[5]+20),ly=CY+Math.sin(am)*(R[5]+20);
+    el(W,"text",{x:lx,y:ly,fill:d[2],"fill-opacity":open?1:.55,"text-anchor":"middle","font-size":13,"font-weight":600},(open?"":"🔒 ")+d[1]);
+    el(W,"text",{x:lx,y:ly+15,fill:"#8b8d91","text-anchor":"middle","font-size":10.5},"owner: "+d[3]);});
+  DEP.forEach((d,i)=>{const a0=-Math.PI/2+i*Math.PI/3-Math.PI/6+0.02,a1=a0+Math.PI/3-0.04;const ps=PEOPLE[d[0]];
+    ps.forEach(([pid,pn],j)=>{const b0=a0+(a1-a0)*j/ps.length+0.01,b1=a0+(a1-a0)*(j+1)/ps.length-0.01;const mine=ME[role]===pid;
+      el(W,"path",{d:arc(R[4]+3,R[5]-3,b0,b1),fill:mine?"#ffffff":d[2],"fill-opacity":mine?0.07:0.012,stroke:mine?"#fff":d[2],"stroke-opacity":mine?0.6:0.12,"stroke-dasharray":mine?"":"2 5"});
+      const bm=(b0+b1)/2,rr=(R[4]+R[5])/2;
+      if(mine){MYNOTES[pid].forEach((t,k)=>{const a=b0+(b1-b0)*(k+1)/3;const x=CX+Math.cos(a)*rr,y=CY+Math.sin(a)*rr;
+          const g=el(W,"g",{class:"card",transform:`translate(${x-52},${y-17})`});el(g,"rect",{width:104,height:34,rx:6,fill:"#2b2b2d",stroke:"#fff","stroke-opacity":.5});
+          el(g,"text",{x:9,y:15,fill:"#eee","font-size":10.5},t);el(g,"text",{x:9,y:28,fill:"#8b8d91","font-size":9},"private · only you");
+          g.onclick=()=>document.getElementById("note").innerHTML=`<div class="yaml"><b>title:</b> ${t}\n<b>area:</b> personal (${pn})\n<b>access:</b> private: only ${pn}, not even the CEO</div>`;});}
+      el(W,"text",{x:CX+Math.cos(bm)*(rr+(mine?30:0)),y:CY+Math.sin(bm)*(rr+(mine?30:0))+4,fill:mine?"#fff":"#6f727a","text-anchor":"middle","font-size":mine?11:10,"font-weight":mine?600:400},(mine?"🏠 ":"🔒 ")+pn);});});
+  el(W,"circle",{cx:CX,cy:CY,r:R[1]-4,fill:"#fff","fill-opacity":0.04,stroke:"#ddd","stroke-opacity":0.35});
+  el(W,"text",{x:CX,y:CY-80,fill:"#fff","text-anchor":"middle","font-size":12,"font-weight":700,"letter-spacing":"1.5"},"COMPANY CORE");
+  [["everyone",1],["department",2],["restricted",3],["personal",4]].forEach(([t,k])=>el(W,"text",{x:CX+4,y:CY-R[k]-4-((R[k+1]-R[k])/2)+((R[k+1]-R[k])/2)-2,fill:"#6f727a","font-size":9.5},t));
+  // links
+  for(const [a,b,k] of LINKS){const A=C.find(c=>c[0]===a),B=C.find(c=>c[0]===b);if(!(can(A)&&can(B)))continue;
+    const [x1,y1]=pos[a],[x2,y2]=pos[b];const mx=(x1+x2)/2+(CX-(x1+x2)/2)*0.35,my=(y1+y2)/2+(CY-(y1+y2)/2)*0.35;
+    el(W,"path",{d:`M${x1},${y1} Q${mx},${my} ${x2},${y2}`,fill:"none",stroke:k==="conflict"?"#ff5c6c":k==="replaces"?"#4fd1a5":"#888","stroke-opacity":k?0.95:0.35,"stroke-width":k?2:1,"stroke-dasharray":k==="conflict"?"6 4":""});}
+  // cards
+  for(const c of C){const [x,y]=pos[c[0]];const vis=can(c);const d=DEP.find(z=>z[0]===c[1]);const col=d?d[2]:"#e0e0e0";
+    const g=el(W,"g",{class:"card",transform:`translate(${x-52},${y-17})`});
+    if(!vis){el(g,"rect",{width:104,height:34,rx:6,fill:"#1a1a1b",stroke:"#3a3a3d","stroke-dasharray":"3 3"});el(g,"text",{x:52,y:21,fill:"#55585e","text-anchor":"middle","font-size":11},"🔒");continue;}
+    const sup=c[5]==="superseded";
+    el(g,"rect",{width:104,height:34,rx:6,fill:"#2b2b2d",stroke:c[5]==="decision"?"#ffb547":c[5]==="remark"?"#7fd0ff":"#444","stroke-width":c[5]==="decision"?2:1,opacity:sup?.5:1});
+    el(g,"rect",{width:3.5,height:34,rx:1.5,fill:col,opacity:sup?.5:1});
+    el(g,"text",{x:9,y:15,fill:"#e6e6e6","font-size":10.5,"font-weight":500,"text-decoration":sup?"line-through":"",opacity:sup?.55:1},c[3]);
+    el(g,"text",{x:9,y:28,fill:"#8b8d91","font-size":9},c[4]+(sup?" · replaced":""));
+    g.onclick=()=>show(c,d);}
+}
+function show(c,d){const acc=c[1]==="core"?"everyone":["","everyone",d[1]+" team","named people only"][c[2]];
+  let y=`<b>title:</b> ${c[3]}\n<b>area:</b> ${d?d[1]:"Company core"}\n<b>owner:</b> ${d?d[3]:"Maya"}\n<b>access:</b> ${acc}\n<b>meta:</b> ${c[4]}`;
+  if(c[0]==="emea-old")y+=`\n<b>superseded_by:</b> [[EMEA target €3.6M]]`;
+  if(c[0]==="remark"&&role==="ceo")y+=`\n<b>conflicts:</b> [[SMB push paused (Q4)]]\n<b>sent to:</b> Maya`;
+  document.getElementById("note").innerHTML=`<div class="yaml">${y}</div>`;}
+const ANS={ceo:`<p><b>Paused for Q4</b>: your decision at the exec offsite (28/10).</p><div class="flag">Lena's post (02/11) says the SMB campaign launches next week. Your decision is binding; her remark can't overrule it. Sent to you because the decision is high-weight.</div>`,
+ raj:`<p>From general company knowledge: SMB grows +18%/yr (analysis, 15/10); Northwind Lite is the SMB tier.</p><div class="hint">💡 For where decisions on SMB currently stand, talk to Maya (Leadership): that area isn't open to your role.</div>`,
+ lena:`<p>From general company knowledge: SMB grows +18%/yr (analysis, 15/10); Northwind Lite is the SMB tier.</p><div class="hint">💡 For where decisions on SMB currently stand, talk to Maya (Leadership): that area isn't open to your role.</div>`};
+document.querySelectorAll(".roles button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".roles button").forEach(x=>x.classList.remove("on"));b.classList.add("on");role=b.dataset.r;draw();document.getElementById("ans").innerHTML=ANS[role];document.getElementById("note").innerHTML='<span class="muted">Click a card.</span>';});
+// pan/zoom
+const svg=document.getElementById("s");let vb=[0,0,1200,900],drag=null;
+svg.addEventListener("wheel",e=>{e.preventDefault();const f=Math.exp(e.deltaY*0.0012);const r=svg.getBoundingClientRect();
+  const px=vb[0]+(e.clientX-r.left)/r.width*vb[2],py=vb[1]+(e.clientY-r.top)/r.height*vb[3];
+  vb=[px-(px-vb[0])*f,py-(py-vb[1])*f,vb[2]*f,vb[3]*f];svg.setAttribute("viewBox",vb.join(" "));},{passive:false});
+svg.addEventListener("mousedown",e=>{if(e.target.closest(".card"))return;drag=[e.clientX,e.clientY];});
+window.addEventListener("mousemove",e=>{if(!drag)return;const r=svg.getBoundingClientRect();vb[0]-=(e.clientX-drag[0])/r.width*vb[2];vb[1]-=(e.clientY-drag[1])/r.height*vb[3];drag=[e.clientX,e.clientY];svg.setAttribute("viewBox",vb.join(" "));});
+window.addEventListener("mouseup",()=>drag=null);
+layout();draw();document.getElementById("ans").innerHTML=ANS.ceo;
+</script></body></html>

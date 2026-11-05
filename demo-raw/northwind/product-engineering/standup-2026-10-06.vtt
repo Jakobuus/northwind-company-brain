@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:18.000
+<v Tobias Weber>Morning. Standup for Tuesday 6 October. Ingrid, go ahead.
+
+2
+00:00:20.000 --> 00:00:38.000
+<v Ingrid Kowalski>Morning. The BMS state-of-charge drift is fixed in build 3. The estimate now stays inside the band over a full discharge.
+
+3
+00:00:40.000 --> 00:00:58.000
+<v Tobias Weber>Is that the same bug as the cold-start jump from 8 September?
+
+4
+00:01:00.000 --> 00:01:18.000
+<v Ingrid Kowalski>Same one. The cold-start jump is gone too, after the change to the reset logic.
+
+5
+00:01:20.000 --> 00:01:38.000
+<v Felix Neumann>I can confirm the app shows the right value on the test bike.
+
+6
+00:01:40.000 --> 00:01:58.000
+<v Tobias Weber>Ingrid, anything else on the BMS?
+
+7
+00:02:00.000 --> 00:02:18.000
+<v Ingrid Kowalski>Yes. The BMS thermal cutoff test passed on Friday. The pack shut down at the set limit and came back cleanly after cooling.
+
+8
+00:02:20.000 --> 00:02:38.000
+<v Tobias Weber>Was that on the rig or on a bike?
+
+9
+00:02:40.000 --> 00:02:58.000
+<v Ingrid Kowalski>The rig first, then one bike in the shop. Same result both times.
+
+10
+00:03:00.000 --> 00:03:18.000
+<v Tobias Weber>Great. Felix, status on the firmware.
+
+11
+00:03:20.000 --> 00:03:38.000
+<v Felix Neumann>Firmware 0.9 is ready for release. The OTA rollback passed on all three bench units.
+
+12
+00:03:40.000 --> 00:03:58.000
+<v Tobias Weber>Is the changelog done?
+
+13
+00:04:00.000 --> 00:04:18.000
+<v Felix Neumann>Almost. I will send the release notes to the team once they are final.
+
+14
+00:04:20.000 --> 00:04:38.000
+<v Tobias Weber>Any blockers for the release?
+
+15
+00:04:40.000 --> 00:04:58.000
+<v Felix Neumann>Only the signing step, which I have scheduled for Wednesday.
+
+16
+00:05:00.000 --> 00:05:18.000
+<v Ingrid Kowalski>I will run the balancing check on build 3 again tomorrow, so we have it on record.
+
+17
+00:05:20.000 --> 00:05:38.000
+<v Tobias Weber>Good. Keep the rig booked for that.
+
+18
+00:05:40.000 --> 00:05:58.000
+<v Ingrid Kowalski>Will do.
+
+19
+00:06:00.000 --> 00:06:18.000
+<v Tobias Weber>Anything else? No, I think we are done for the week on the BMS side.
+
+20
+00:06:20.000 --> 00:06:38.000
+<v Felix Neumann>Nothing from me. Thanks.

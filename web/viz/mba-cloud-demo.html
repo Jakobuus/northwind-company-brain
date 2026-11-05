@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MBA Brain cloud</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0d12; overflow: hidden; }
+  canvas { display: block; width: 100vw; height: 100vh; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script src="mba-cloud.js"></script>
+<script>
+  var cv = document.getElementById("c"), ctx = cv.getContext("2d");
+  var dpr = window.devicePixelRatio || 1, W, H;
+  var q = new URLSearchParams(location.search);
+  var view = { cx: 0, cy: 0, R: 0 }, lit = new Set();
+  function resize() {
+    W = innerWidth; H = innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    if (!view.R) { view.cx = W / 2; view.cy = H / 2; view.R = Math.min(W, H) * 0.49; }
+    if (q.get("R")) { view.R = +q.get("R"); }
+  }
+  resize(); addEventListener("resize", resize);
+  // wheel zoom + drag pan, like the real app
+  cv.addEventListener("wheel", function (e) {
+    e.preventDefault();
+    var k = Math.exp(-e.deltaY * 0.0015);
+    view.cx = e.clientX - (e.clientX - view.cx) * k;
+    view.cy = e.clientY - (e.clientY - view.cy) * k;
+    view.R *= k;
+  }, { passive: false });
+  var drag = null;
+  cv.addEventListener("pointerdown", function (e) { drag = [e.clientX, e.clientY]; });
+  addEventListener("pointerup", function () { drag = null; });
+  addEventListener("pointermove", function (e) {
+    if (!drag) return;
+    view.cx += e.clientX - drag[0]; view.cy += e.clientY - drag[1];
+    drag = [e.clientX, e.clientY];
+  });
+  function frame(now) {
+    var d = window.devicePixelRatio || 1; // browser zoom / display change: re-read every frame
+    if (d !== dpr || cv.width !== Math.round(W * d)) { dpr = d; W = innerWidth; H = innerHeight; cv.width = Math.round(W * d); cv.height = Math.round(H * d); }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = "#0b0d12"; ctx.fillRect(0, 0, W, H);
+    MBACloud.draw(ctx, { cx: view.cx, cy: view.cy, R: view.R, alpha: 1, lit: lit, now: now, hole: +q.get("disc") || 0, muted: !!q.get("muted") });
+    if (q.get("disc")) { // demo of the combined view: opaque brain disc over the middle
+      ctx.fillStyle = "#0b0d12"; ctx.beginPath();
+      ctx.arc(view.cx, view.cy, +q.get("disc") * view.R, 0, 6.2832); ctx.fill();
+      ctx.strokeStyle = "rgba(160,175,200,0.35)"; ctx.lineWidth = 1.5; ctx.stroke();
+    }
+    requestAnimationFrame(frame);
+  }
+  MBACloud.load("mba-graph.json").then(function () {
+    var t = MBACloud.titles();
+    [Math.floor(t.length * 0.12), Math.floor(t.length * 0.45), Math.floor(t.length * 0.8)]
+      .forEach(function (i) { lit.add(t[i].toLowerCase()); });
+    window.__lit = Array.from(lit);
+    if (q.get("focus")) fetch("mba-graph.json").then(function (r) { return r.json(); }).then(function (g) {
+      var f = g.nodes.filter(function (n) { return n.t && n.t.toLowerCase() === q.get("focus").toLowerCase(); })[0];
+      if (f) { view.cx = W / 2 - f.x * view.R; view.cy = H / 2 - f.y * view.R; }
+    });
+    requestAnimationFrame(frame);
+  });
+</script>
+</body>
+</html>

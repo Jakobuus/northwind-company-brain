@@ -1,0 +1,76 @@
+From mateo@northwind.example Wed Oct 14 09:02:00 2026
+From: Mateo Fischer <mateo@northwind.example>
+To: Sofia Marchetti <sofia@northwind.example>
+Date: Wed, 14 Oct 2026 09:02:00 +0200
+Subject: Cellwerk battery pack orders for Q4
+Message-ID: <20261014090200.q4-orders@northwind.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hi Sofia,
+
+I have the Q4 call-off ready in the purchasing system, pending your sign-off. The volume is in line with the production plan Tomasz shared last week.
+
+One thing to flag: the delivery dates Cellwerk confirmed for the September orders have moved again. I will pull the receipt dates into the deliveries sheet so we have the real numbers before we talk about the next quarter.
+
+Mateo
+
+From sofia@northwind.example Tue Oct 20 08:41:00 2026
+From: Sofia Marchetti <sofia@northwind.example>
+To: Mateo Fischer <mateo@northwind.example>
+Date: Tue, 20 Oct 2026 08:41:00 +0200
+Subject: Re: Cellwerk battery pack orders for Q4
+Message-ID: <20261020084100.q4-orders-reply@northwind.example>
+In-Reply-To: <20261014090200.q4-orders@northwind.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Mateo,
+
+Sign-off is fine for the Q4 volume. Please send the call-off today.
+
+On the moved dates: yes, pull the receipt dates. I want to plan dealer stock with the measured number, not with an old estimate. Please copy me when the sheet is up.
+
+Sofia
+
+From jens@cellwerk.example Tue Oct 20 15:27:00 2026
+From: Jens Brauer <jens@cellwerk.example>
+To: Mateo Fischer <mateo@northwind.example>
+Cc: Sofia Marchetti <sofia@northwind.example>
+Date: Tue, 20 Oct 2026 15:27:00 +0200
+Subject: Re: Cellwerk battery pack orders for Q4
+Message-ID: <20261020152700.cellwerk-q4@cellwerk.example>
+In-Reply-To: <20261020084100.q4-orders-reply@northwind.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hello Mateo,
+
+Thanks for the Q4 call-off. We have received it and it is in the allocation queue for the fourth quarter.
+
+Our cell supply is tight at the moment, so the dispatch dates for September and October orders are running later than we first quoted. I am sorry for the moving dates. Our planning team will send you a revised dispatch window for each open order by the end of the month.
+
+Best regards,
+Jens Brauer
+Account Manager, Cellwerk GmbH
+jens@cellwerk.example
+
+From mateo@northwind.example Sat Oct 24 17:50:00 2026
+From: Mateo Fischer <mateo@northwind.example>
+To: Sofia Marchetti <sofia@northwind.example>
+Date: Sat, 24 Oct 2026 17:50:00 +0200
+Subject: Re: Cellwerk battery pack orders for Q4
+Message-ID: <20261024175000.q4-orders-numbers@northwind.example>
+In-Reply-To: <20261020084100.q4-orders-reply@northwind.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Sofia,
+
+I have the receipt dates for the eight Cellwerk deliveries since February. They are in the deliveries sheet, and the average is what it is: the 8 orders took 9 weeks on average from order to our dock.
+
+Our last three deliveries all took 9 or 10 weeks. Planning the dealer stock on anything shorter would leave us short, so I have written a short report with the numbers and a recommendation. It is in the operations folder as the supplier lead-time report.
+
+Jens has promised a revised window for each open order by the end of the month. When it arrives I will add it to the sheet and tell you what changes for the Q4 build plan.
+
+Mateo

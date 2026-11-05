@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Company Brain</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flow.css">
+</head>
+<body class="v-brain">
+<div id="views" class="views" role="tablist" aria-label="View">
+  <button type="button" role="tab" data-v="brain" class="on" aria-selected="true">Company Brain + MBA Brain</button>
+  <button type="button" role="tab" data-v="mba" aria-selected="false">Frameworks</button>
+  <button type="button" role="tab" data-v="how" aria-selected="false">How it works</button>
+</div>
+<div id="howview" class="howview" hidden></div>
+<div id="fwview" class="fwview" hidden></div>
+<div id="mbacap" class="mbacap" hidden></div>
+<div id="wrap">
+  <div id="left">
+    <canvas id="c" aria-label="Company brain graph: rings of notes by access level"></canvas>
+    <div class="top">
+      <h1 id="title">Company Brain <span id="subtitle"></span></h1>
+      <div class="viewer" id="viewer" hidden aria-label="Viewing as"></div>
+      <div class="roles" id="roles" role="group" aria-label="View as"></div>
+    </div>
+    <div class="zoom">
+      <button id="zin" title="Zoom in" aria-label="Zoom in">+</button>
+      <button id="zout" title="Zoom out" aria-label="Zoom out">&minus;</button>
+      <button id="zfit" title="Fit everything" aria-label="Fit everything">fit</button>
+    </div>
+    <div class="legend">
+      <span class="lg"><i class="sw core"></i><b>Company core</b> everyone</span>
+      <span class="lg"><i class="sw dcore"></i>Department core &middot; everyone</span>
+      <span class="lg"><i class="sw dint"></i>Department internal &middot; team only</span>
+      <span class="lg"><i class="sw priv"></i>Private &middot; owner only</span>
+      <span class="lg"><i class="sw halo"></i>MBA Brain &middot; frameworks everyone has</span>
+      <span class="lg"><i class="sw lead"></i>lead</span>
+      <span class="lg"><i class="sw nogo"></i>greyed &middot; this person can't read it</span>
+      <span class="k-con">- - conflict</span>
+      <span>drop a file to add it &middot; scroll = zoom</span>
+    </div>
+    <div id="halocap" class="halocap" hidden></div>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <div id="dropmenu" class="dropmenu" hidden></div>
+    <div id="flow" class="flow" hidden aria-live="polite"></div>
+    <div class="dropzone" aria-hidden="true"><div>Drop to add it to the brain</div></div>
+    <label class="addfile" title="Add a document">+ Add document<input id="addfile" type="file" hidden></label>
+    <div id="status" class="status" hidden></div>
+    <div id="cards" class="cards" aria-live="polite">
+      <div class="box" id="ans"><span class="muted">Answers use only what the selected person may read, plus the MBA Brain.</span></div>
+      <div class="box" id="note"><span class="muted">Click a card.</span></div>
+    </div>
+    <form id="askform" class="askform askdock" autocomplete="off">
+      <input id="q" type="text" placeholder="Ask the brain anything…" aria-label="Question">
+      <button type="submit">Ask</button>
+    </form>
+  </div>
+</div>
+<script>window.BRAIN_ALLOWED_APIS = [];</script>
+<script src="viz/mba-cloud.js"></script>
+<script src="viz/fw-view.js"></script>
+<script src="flow.js"></script>
+<script src="graph.js"></script>
+</body>
+</html>

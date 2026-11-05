@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>How it works (system diagram demo)</title>
+<link rel="stylesheet" href="flow.css">
+<style>html,body{margin:0;height:100%;background:#1e1e1e}#m{position:fixed;inset:0}</style>
+<div id="m"></div><script src="flow.js"></script>
+<script>
+var el = document.getElementById('m');
+for (var i = 0; i < 10; i++) { HowFlow.mount(el, {docs: 1}); HowFlow.unmount(); }
+HowFlow.mount(el, {docs: 142, facts: 618, people: 24, departments: 6});
+</script>

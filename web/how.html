@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Company Brain · How it works</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="how.css">
+</head>
+<body>
+<header class="bar">
+  <h1><span id="co">Company</span> Brain <span class="dim">· how it works</span></h1>
+  <div class="who">
+    <span class="lbl">Viewing as</span>
+    <select id="person" aria-label="View as"></select>
+    <a class="back" id="back" href="./">&larr; graph</a>
+  </div>
+</header>
+
+<section class="lane" id="ingest">
+  <div class="lane-head">
+    <span class="num">1</span><h2>Ingest</h2>
+    <span class="sub">every file becomes notes with a reader list &middot; counts show only what <b class="vname">you</b> can read</span>
+  </div>
+  <div class="flow five">
+    <div class="stage" data-i="0">
+      <div class="st">Source files</div>
+      <div class="chips" id="types"></div>
+      <div class="foot" id="types-foot"></div>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-i="1">
+      <div class="st">Importers</div>
+      <ul class="imp">
+        <li><b>pdf</b> &middot; <b>docx</b> &middot; <b>pptx</b> <span>text + title + date</span></li>
+        <li><b>email</b> <span>sender + recipients = readers</span></li>
+        <li><b>transcripts</b> <span>speakers = attendees = readers</span></li>
+        <li><b>sheets</b> <span>one note per sheet</span></li>
+      </ul>
+      <div class="foot">area &middot; author &middot; access set at import</div>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-i="2">
+      <div class="st">Notes &middot; who can read</div>
+      <div class="acc" id="acc"></div>
+      <div class="foot" id="notes-foot"></div>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-i="3">
+      <div class="st">Facts &amp; decisions</div>
+      <div class="big"><span id="nfacts">&ndash;</span><small>facts &middot; <span id="ndec">&ndash;</span> decisions</small></div>
+      <div class="quote" id="quote"><span class="dim">exact quote back to the source</span></div>
+      <div class="foot" id="facts-foot">every quote is checked against its source</div>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-i="4">
+      <div class="st">Meaning index</div>
+      <div class="vec" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="foot">local embeddings + keyword index &middot; search runs only inside what the viewer may read</div>
+    </div>
+  </div>
+</section>
+
+<section class="lane" id="retrieve">
+  <div class="lane-head">
+    <span class="num">2</span><h2>Retrieve</h2>
+    <span class="sub">as <b class="vname">you</b> &middot; the same rules for the web page, Claude and ChatGPT</span>
+    <form id="askform" class="askform" autocomplete="off">
+      <input id="q" type="text" placeholder="Ask a question…" aria-label="Question">
+      <button type="submit" id="askbtn">Ask</button>
+      <button type="button" id="replay" class="ghost" disabled>&#8635; Replay</button>
+    </form>
+  </div>
+  <div class="flow four">
+    <div class="stage" data-s="0">
+      <div class="st"><span class="sn">a</span> Search <em>keyword + meaning</em></div>
+      <ul class="list" id="s-search"></ul>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-s="1">
+      <div class="st"><span class="sn">b</span> Access check</div>
+      <div class="gate">Hidden notes never enter the search: only notes <b class="vname">you</b> may read are ranked.</div>
+      <ul class="list" id="s-access"></ul>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-s="2">
+      <div class="st"><span class="sn">c</span> Whose word wins</div>
+      <div id="s-prec"></div>
+    </div>
+    <div class="arr" aria-hidden="true"></div>
+    <div class="stage" data-s="3">
+      <div class="st"><span class="sn">d</span> Answer</div>
+      <div id="s-ans"></div>
+    </div>
+  </div>
+</section>
+<div id="status" class="status" hidden></div>
+<script src="how.js"></script>
+</body>
+</html>

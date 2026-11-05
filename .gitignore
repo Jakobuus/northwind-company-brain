@@ -1,0 +1,10 @@
+.venv/
+.brain-cache/
+__pycache__/
+*.pyc
+.superpowers/
+web/vendor/
+web/dev/
+.env
+.env.local
+.brain-dev.env

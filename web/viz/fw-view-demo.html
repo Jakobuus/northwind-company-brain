@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>FwView demo</title>
+<style>html,body{margin:0;height:100%;background:#0b0d12;overflow:hidden}#host{position:fixed;inset:0}</style></head>
+<body><div id="host"></div>
+<script src="fw-view.js"></script>
+<script>
+  // demo only: fake the endpoints
+  var realFetch = window.fetch.bind(window);
+  var MD = "A **go-to-market** plan decides *who* you sell to, *how* you reach them and *why* they buy.\n\n## Steps\n\n- Pick the **beachhead** segment\n- Define the value proposition\n- Choose channels (see [Porter](https://example.com))\n\n1. Test with 10 customers\n2. Measure CAC and payback\n3. Scale what works\n\n<script>alert(1)<\/script>\n\n### Watch out\n\nDon't scale before the message lands.";
+  window.fetch = function (u, o) {
+    if (/\/api\/framework\?name=/.test(u)) return Promise.resolve(new Response(JSON.stringify({ name: "Go-to-market strategy", title: "Customer creation strategy", markdown: MD }), { status: 200 }));
+    if (/\/api\/frameworks\/count$/.test(u)) return Promise.resolve(new Response(JSON.stringify({ count: 1063 }), { status: 200 }));
+    return realFetch(u, o);
+  };
+  FwView.mount(document.getElementById("host"), { api: "/v/demo" });
+</script></body></html>

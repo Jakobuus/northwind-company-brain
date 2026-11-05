@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:18.000
+<v Tobias Weber>Morning everyone. Standup for Tuesday 8 September. Ingrid, you first.
+
+2
+00:00:20.000 --> 00:00:38.000
+<v Ingrid Kowalski>Morning. The cell balancing test on the rig finished overnight, results are in the shared folder.
+
+3
+00:00:40.000 --> 00:00:58.000
+<v Tobias Weber>Good. What is the headline?
+
+4
+00:01:00.000 --> 00:01:18.000
+<v Ingrid Kowalski>Balancing holds inside the target window on all cells at 80 percent state of charge. The two cells that drifted last week settled after the second balance pass.
+
+5
+00:01:20.000 --> 00:01:38.000
+<v Felix Neumann>Second pass for both, or did one of them settle on the first?
+
+6
+00:01:40.000 --> 00:01:58.000
+<v Ingrid Kowalski>Second pass for both. The rest of the pack was clean from the start.
+
+7
+00:02:00.000 --> 00:02:18.000
+<v Tobias Weber>Anything else on the BMS?
+
+8
+00:02:20.000 --> 00:02:38.000
+<v Ingrid Kowalski>One bug. The SoC estimate jumps by about four percent after a cold start. It is a firmware bug, and I have a reproduction on the bench.
+
+9
+00:02:40.000 --> 00:02:58.000
+<v Tobias Weber>That matters for the rider app. Is the fix in the 0.9 branch?
+
+10
+00:03:00.000 --> 00:03:18.000
+<v Ingrid Kowalski>It is on main only. I will not cherry-pick until the fix has run on the rig.
+
+11
+00:03:20.000 --> 00:03:38.000
+<v Felix Neumann>I can check the app side meanwhile. The display reads that value straight from the BMS.
+
+12
+00:03:40.000 --> 00:03:58.000
+<v Tobias Weber>Do that. Felix, your update.
+
+13
+00:04:00.000 --> 00:04:18.000
+<v Felix Neumann>OTA update. The rollback path works on the bench now. The signed image step for the dealer flash tool is still open.
+
+14
+00:04:20.000 --> 00:04:38.000
+<v Tobias Weber>Is the signing blocked on anyone?
+
+15
+00:04:40.000 --> 00:04:58.000
+<v Felix Neumann>No. I have the keys from Operations, and I expect the signed image by the end of the week.
+
+16
+00:05:00.000 --> 00:05:18.000
+<v Tobias Weber>Good. Ingrid, when is the SoC fix ready to test?
+
+17
+00:05:20.000 --> 00:05:38.000
+<v Ingrid Kowalski>Tomorrow, if the rig is free. I will book it now.
+
+18
+00:05:40.000 --> 00:05:58.000
+<v Tobias Weber>Priority this week: the SoC bug first, then OTA signing.
+
+19
+00:06:00.000 --> 00:06:18.000
+<v Felix Neumann>Agreed. I will send the signed image to you before Friday.
+
+20
+00:06:20.000 --> 00:06:38.000
+<v Tobias Weber>Thanks all. Next standup Thursday.
